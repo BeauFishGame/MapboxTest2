@@ -22,7 +22,7 @@
 
         .map-overlay {
             display: none;
-            font: 12px/20px sans-serif;
+            font: 12px/20px 'Basic Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             padding: 10px;
             position: absolute;
             right: 0;
@@ -30,6 +30,7 @@
             width: 230px;
             overflow: hidden;
             white-space: normal;
+             transition: opacity 0.3s ease;
         }
 
         .card-title {
@@ -50,15 +51,46 @@
             left: 10px;
             width: 25vw;
             height: 96vh;
-            /* almost full viewport width */
-        
+            font-family: 'Basic Sans', serif;
+            font-size: 18px;
+            line-height: 1.5;
             overflow-y: auto;
             padding: 15px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
             z-index: 9999;
             box-sizing: border-box;
+             transition: height 0.2s ease;
+    touch-action: none;
+        }
+
+        /* Responsive override for mobile screens */
+        @media (max-width: 768px) {
+            .map-overlay-inner {
+                top: auto;
+                /* unset top */
+                bottom: 0;
+                /* align to bottom */
+                left: 0;
+                overflow-y: auto;
+                width: 100vw;
+                /* full screen width */
+                height: 50vh;
+                /* bottom half */
+                border-radius: 8px 8px 0 0;
+                /* rounded top corners */
+            }
+        }
+
+        .map-overlay-drag-handle {
+            width: 60px;
+            height: 6px;
+            background: #ccc;
+            border-radius: 3px;
+            margin: 8px auto;
+            touch-action: none;
+    cursor: grab;
         }
 
         #method-filters {
@@ -86,24 +118,31 @@
             border-radius: 4px;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
+
+        .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 10000;
+}
     </style>
 </head>
 
 <body>
 
     <div id="map"></div>
+    <!-- The rest of your content -->
 
     <div id="menu">
         <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
-        <label for="satellite-streets-v12">satellite streets</label>
-        <input id="light-v11" type="radio" name="rtoggle" value="light">
-        <label for="light-v11">light</label>
-        <input id="dark-v11" type="radio" name="rtoggle" value="dark">
-        <label for="dark-v11">dark</label>
-        <input id="streets-v12" type="radio" name="rtoggle" value="streets">
-        <label for="streets-v12">streets</label>
-        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors">
-        <label for="outdoors-v12">outdoors</label>
+        <label for="satellite-streets-v12">Satellite</label>
+        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
+        <label for="outdoors-v12">Outdoors</label>
     </div>
 
     <div id="method-filters">
@@ -120,12 +159,12 @@
 
         const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/beauchild/cmalpp8zx011c01rfejihdepu',
+            style: 'mapbox://styles/mapbox/outdoors-v12',
             center: [173.1, -41.4],
             zoom: 5
         });
         map.addControl(new mapboxgl.FullscreenControl());
-        map.addControl(new mapboxgl.NavigationControl(  {
+        map.addControl(new mapboxgl.NavigationControl({
             showCompass: false
         }));
         map.addControl(new mapboxgl.GeolocateControl({
@@ -136,33 +175,42 @@
             showUserHeading: true
         }));
 
-          map.dragRotate.disable();
+        map.dragRotate.disable();
 
-    // disable map rotation using touch rotation gesture
-    map.touchZoomRotate.disableRotation();
+
+        // disable map rotation using touch rotation gesture
+        map.touchZoomRotate.disableRotation();
 
         const card = document.getElementById('properties');
 
         const showCard = (feature) => {
-            const props = feature.properties;
-            const displayFields = {
-                methods: 'Method',
-                open: 'Open',
-                limtrout: 'Trout Limit',
-                Description: "Description",
-            };
+    const props = feature.properties;
+    const displayFields = {
+        methods: 'Method',
+        open: 'Open',
+        limtrout: 'Trout Limit',
+        Description: "Description",
+    };
 
-            let content = `<div class="map-overlay-inner"><code class="card-title">${props.name || props.Title || 'No Title'}</code><hr><ul>`;
+    let content = `
+    <div class="map-overlay-inner">
+        <div class="map-overlay-drag-handle"></div>
+        <button class="close-button" onclick="document.getElementById('properties').style.display='none'">×</button>
+        <code class="card-title">${props.name || props.Title || 'No Title'}</code>
+        <hr>
+        <ul>
+    `;
 
-            for (const [key, label] of Object.entries(displayFields)) {
-                if (props[key] !== undefined) {
-                    content += `<li><b>${label}</b>: ${props[key]}</li>`;
-                }
-            }
-            content += `</ul></div>`;
-            card.innerHTML = content;
-            card.style.display = 'block';
-        };
+    for (const [key, label] of Object.entries(displayFields)) {
+        if (props[key] !== undefined) {
+            content += `<li><b>${label}</b>: ${props[key]}</li>`;
+        }
+    }
+
+    content += `</ul></div>`;
+    card.innerHTML = content;
+    card.style.display = 'block';
+};
 
 
         let selectedAccess = null;
@@ -316,62 +364,62 @@
                     'icon-allow-overlap': true,
                 },
             });
-            
-          let selectedFeatureId = null;
-let hoverFeatureId = null;
 
-function updateIconSize() {
-    map.setLayoutProperty('AW Access-points', 'icon-size', [
-        'case',
-        // If hovered and not selected, use hover size
-        ['all',
-            ['==', ['id'], hoverFeatureId],
-            ['!=', ['id'], selectedFeatureId]
-        ], 0.15,
-        // If selected, use selected size
-        ['==', ['id'], selectedFeatureId], 0.18,
-        // Default size
-        0.14
-    ]);
-}
+            let selectedFeatureId = null;
+            let hoverFeatureId = null;
 
-// Hover start — only update if not the selected feature
-map.on('mouseenter', 'AW Access-points', e => {
-    map.getCanvas().style.cursor = 'pointer';
+            function updateIconSize() {
+                map.setLayoutProperty('AW Access-points', 'icon-size', [
+                    'case',
+                    // If hovered and not selected, use hover size
+                    ['all',
+                        ['==', ['id'], hoverFeatureId],
+                        ['!=', ['id'], selectedFeatureId]
+                    ], 0.15,
+                    // If selected, use selected size
+                    ['==', ['id'], selectedFeatureId], 0.18,
+                    // Default size
+                    0.14
+                ]);
+            }
 
-    const hoveredId = e.features[0].id;
-    // Only apply hover if not currently selected
-    if (hoveredId !== selectedFeatureId) {
-        hoverFeatureId = hoveredId;
-        updateIconSize();
-    }
-});
+            // Hover start — only update if not the selected feature
+            map.on('mouseenter', 'AW Access-points', e => {
+                map.getCanvas().style.cursor = 'pointer';
 
-// Hover end — clear hover unless it's also selected
-map.on('mouseleave', 'AW Access-points', () => {
-    map.getCanvas().style.cursor = '';
-    hoverFeatureId = null;
-    updateIconSize();
-});
+                const hoveredId = e.features[0].id;
+                // Only apply hover if not currently selected
+                if (hoveredId !== selectedFeatureId) {
+                    hoverFeatureId = hoveredId;
+                    updateIconSize();
+                }
+            });
 
-// Click on an access point — select it
-map.on('click', 'AW Access-points', e => {
-    selectedFeatureId = e.features[0].id;
-    hoverFeatureId = null; // Clear hover on selection
-    updateIconSize();
-});
+            // Hover end — clear hover unless it's also selected
+            map.on('mouseleave', 'AW Access-points', () => {
+                map.getCanvas().style.cursor = '';
+                hoverFeatureId = null;
+                updateIconSize();
+            });
 
-// Click elsewhere — clear selection
-map.on('click', e => {
-    const features = map.queryRenderedFeatures(e.point, {
-        layers: ['AW Access-points']
-    });
+            // Click on an access point — select it
+            map.on('click', 'AW Access-points', e => {
+                selectedFeatureId = e.features[0].id;
+                hoverFeatureId = null; // Clear hover on selection
+                updateIconSize();
+            });
 
-    if (features.length === 0 && selectedFeatureId !== null) {
-        selectedFeatureId = null;
-        updateIconSize();
-    }
-});
+            // Click elsewhere — clear selection
+            map.on('click', e => {
+                const features = map.queryRenderedFeatures(e.point, {
+                    layers: ['AW Access-points']
+                });
+
+                if (features.length === 0 && selectedFeatureId !== null) {
+                    selectedFeatureId = null;
+                    updateIconSize();
+                }
+            });
 
             map.on('click', (e) => {
                 const features = map.queryRenderedFeatures(e.point, {
@@ -520,6 +568,57 @@ map.on('click', e => {
             // Re-add your sources and layers
             addCustomDataAndLayers();
         });
+
+
+
+        (function enableResizing() {
+    let startY = 0;
+    let startHeight = 0;
+    const card = document.getElementById('properties');
+
+    document.addEventListener('mousedown', startDrag);
+    document.addEventListener('touchstart', startDrag, { passive: false });
+
+    function startDrag(e) {
+        const target = e.target.closest('.map-overlay-drag-handle');
+        if (!target) return;
+
+        e.preventDefault();
+        startY = e.touches ? e.touches[0].clientY : e.clientY;
+
+        const overlay = target.closest('.map-overlay-inner');
+        startHeight = overlay.offsetHeight;
+
+        document.addEventListener('mousemove', onDrag);
+        document.addEventListener('touchmove', onDrag, { passive: false });
+
+        document.addEventListener('mouseup', stopDrag);
+        document.addEventListener('touchend', stopDrag);
+    }
+
+    function onDrag(e) {
+        e.preventDefault();
+        const currentY = e.touches ? e.touches[0].clientY : e.clientY;
+        const deltaY = startY - currentY;
+
+        const overlay = document.querySelector('.map-overlay-inner');
+        let newHeight = startHeight + deltaY;
+
+        // Clamp the height between 30% and 90% of viewport height
+        const minHeight = window.innerHeight * 0.3;
+        const maxHeight = window.innerHeight * 0.9;
+        newHeight = Math.max(minHeight, Math.min(maxHeight, newHeight));
+
+        overlay.style.height = `${newHeight}px`;
+    }
+
+    function stopDrag() {
+        document.removeEventListener('mousemove', onDrag);
+        document.removeEventListener('touchmove', onDrag);
+        document.removeEventListener('mouseup', stopDrag);
+        document.removeEventListener('touchend', stopDrag);
+    }
+})();
 
     </script>
 
