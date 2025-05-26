@@ -1,0 +1,2105 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.836754,-38.562567 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1760028.573,
+    "Y":5730164.725,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.8256544,-38.55348014 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1759081.475,
+    "Y":5731192.417,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.818457,-38.546757 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1758469.03,
+    "Y":5731950.954,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.815549,-38.544575 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1758220.377,
+    "Y":5732198.111,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.815355,-38.534748 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1758225.004,
+    "Y":5733288.996,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.810421,-38.529219 ]
+    },
+    "properties": {
+    "Group":"a",
+    "Title":"Awakino River",
+    "X":1757807.01,
+    "Y":5733911.055,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.804724,-38.505987 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757360.978,
+    "Y":5736498.974,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.807001,-38.498507 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757575.837,
+    "Y":5737325.163,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.80703,-38.49422 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757587.709,
+    "Y":5737800.859,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.806098,-38.494005 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757506.893,
+    "Y":5737826.315,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.807432,-38.491153 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757629.454,
+    "Y":5738140.528,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.809139,-38.484032 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757793.87,
+    "Y":5738927.848,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.810821,-38.480708 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Awakino River",
+    "X":1757947.843,
+    "Y":5739293.84,
+    "Description":"Nice moderate sized stream with rainbow trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6813044,-37.29456018 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Hikutaia River",
+    "X":1837671.74,
+    "Y":5869079.27,
+    "Description":"Small rainbows in the pools along with larger spawning fish during May/June"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7005792,-37.29396664 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Hikutaia River",
+    "X":1839382.49,
+    "Y":5869096.47,
+    "Description":"Small rainbows in the pools along with larger spawning fish during May/June"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.712187,-37.29324902 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Hikutaia River",
+    "X":1840413.91,
+    "Y":5869146.63,
+    "Description":"Small rainbows in the pools along with larger spawning fish during May/June"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7197667,-37.28811345 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Hikutaia River",
+    "X":1841102.33,
+    "Y":5869697.22,
+    "Description":"Small rainbows in the pools along with larger spawning fish during May/June"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7292888,-37.29180734 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Hikutaia River",
+    "X":1841934.77,
+    "Y":5869262.96,
+    "Description":"Access via paper road to upstream fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6457689,-36.86418283 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaimarama River",
+    "X":1835851.85,
+    "Y":5916925.89,
+    "Description":"Small stream with full public access upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6108616,-36.87765812 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaimarama River",
+    "X":1832698.58,
+    "Y":5915516.34,
+    "Description":"Small stream with full public access upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8774488,-37.93392972 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kakahu Stream",
+    "X":1852885,
+    "Y":5797610,
+    "Description":"Small stream, good public access but overgrown in parts.  Often high fish numbers in autumn."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0802174,-37.9202766 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaniwhaniwha Stream",
+    "X":1782845,
+    "Y":5800990,
+    "Description":"Excellent access upstream along public walkway upstream and 0.9 km downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0879758,-37.90642077 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaniwhaniwha Stream",
+    "X":1783561.46,
+    "Y":5802512.31,
+    "Description":"Parking past bridge with access to upstream fishing nice pool behind milking shed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0894126,-37.89881825 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaniwhaniwha Stream",
+    "X":1783706.69,
+    "Y":5803353.12,
+    "Description":"parking near bridge (do not block gates) up and downstream trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0896431,-37.89478238 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kaniwhaniwha Stream",
+    "X":1783737,
+    "Y":5803800.52,
+    "Description":"Parking for walkway with access to downstream fishing for trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7179815,-36.93618083 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Kapowai River",
+    "X":1842062.71,
+    "Y":5908755.59,
+    "Description":"Low flows can make pools difficult to fish but good for spinners"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6876901,-37.34461823 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Komata River",
+    "X":1838079.79,
+    "Y":5863508.15,
+    "Description":"Small rainbows in the pools along Komata Road with larger spawning fish during May/June"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1328427,-37.5703408 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lakae Waahi",
+    "X":1788356.4,
+    "Y":5839716.65,
+    "Description":"Perch fishing around clear water coming out of Lake Puketirini"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.638172,-38.08113053 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1831388.79,
+    "Y":5781896.36,
+    "Description":"Trout fishing from bridge is very productive using a smelt fly behind a sinker, a dip net is required"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6351224,-38.10296296 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1831052.47,
+    "Y":5779480.95,
+    "Description":"Trout and rudd fishing at Jones Landing great rudd fishing spot for kids"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6331911,-38.10069537 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1830890.24,
+    "Y":5779737.42,
+    "Description":"Trout and rudd Bulmer Landing great rudd fishing spot for kids"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6252759,-38.11209901 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1830160.27,
+    "Y":5778491.49,
+    "Description":"Trout and rudd fishing from bank"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6580694,-38.16301554 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1832873.79,
+    "Y":5772758.72,
+    "Description":"Trout and rudd fishing from park suitable for fly or spin fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6836301,-38.29129225 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1834700.63,
+    "Y":5758457.35,
+    "Description":"Trout fishing from platform at bottom of stairs under dam in very swift water"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6853005,-38.28564105 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1834864.97,
+    "Y":5759080.31,
+    "Description":"Trout release site suitable for spin fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6768364,-38.27688752 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1834152.69,
+    "Y":5760073.31,
+    "Description":"Mangawhio Stream Falls accessible by boat or a long hike trout fishing with fly or spinner"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6803567,-38.22875323 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Arapuni",
+    "X":1834615.52,
+    "Y":5765406.59,
+    "Description":"Lake Arapuni offers good trolling and is stocked annually"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8523556,-38.23396027 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Moanna-nui",
+    "X":1849655.86,
+    "Y":5764378.42,
+    "Description":"Ample access on public walkway stocked annually with rainbow trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2905481,-37.95901622 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Ngaroto",
+    "X":1801229.04,
+    "Y":5796257.33,
+    "Description":"Good rudd fishing and ideal for kids with pull up access use small floats and corn"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.6857252,-37.31389087 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Parkinson",
+    "X":1749376.16,
+    "Y":5868973.51,
+    "Description":"Stocked annually with rainbow trout please shut gate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.7697024,-36.77727621 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Pupuke",
+    "X":1757926.41,
+    "Y":5928374.16,
+    "Description":"Trout, perch, tench fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2743736,-37.79350962 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Rotoroa",
+    "X":1800255.75,
+    "Y":5814658.68,
+    "Description":"Perch, rudd and tench fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2774432,-37.80336907 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Rotoroa",
+    "X":1800499.39,
+    "Y":5813557.99,
+    "Description":"Perch, rudd and tench fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2746441,-37.80161936 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Rotoroa",
+    "X":1800257.66,
+    "Y":5813758.16,
+    "Description":"Perch, rudd and tench fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2744977,-37.79693616 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Rotoroa",
+    "X":1800257.42,
+    "Y":5814278.17,
+    "Description":"Perch, rudd and tench fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6816402,-38.30112459 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Waipapa",
+    "X":1834494.9,
+    "Y":5757371.15,
+    "Description":"A quiet location to troll for trout along weed beds and near stream inlets in summer months"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.6709684,-37.27555497 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lake Whatihua",
+    "X":1748143.61,
+    "Y":5873250.16,
+    "Description":"Stocked annually with rainbow trout park by gate or on upper road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.697126,-38.05552068 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Little Waipa Stream",
+    "X":1836643,
+    "Y":5784590,
+    "Description":"Classic spring-fed river with a considerable length of fishable water"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6483606,-37.35630035 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Lower Waihou River",
+    "X":1834558.87,
+    "Y":5862310.27,
+    "Description":"Fishes well with spinners during October/November or near river mouths during warmer months"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6226308,-36.85520061 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mahakirau",
+    "X":1833816.23,
+    "Y":5917979.53,
+    "Description":"Small stream with full public access upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.8801664,-38.34491827 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangaohae",
+    "X":1764304.29,
+    "Y":5754241.64,
+    "Description":"Spectacular scenery along the DoC track to Speedies Road with reasonable numbers of rainbow trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1944734,-38.35815421 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangaokewa Stream",
+    "X":1791738.98,
+    "Y":5752166.51,
+    "Description":"Reserve track offers easy access to stream and free camping"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2122877,-37.11733675 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangatangi Dam",
+    "X":1796551.17,
+    "Y":5889820.46,
+    "Description":"Fishing for rainbow trout from dam only no bait allowed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4572803,-38.19319976 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangatutu",
+    "X":1815191.1,
+    "Y":5769894.5,
+    "Description":"Up and downstream access to good trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.46191,-38.19850936 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangatutu",
+    "X":1815580.93,
+    "Y":5769294.47,
+    "Description":"Parking area is now on Wharepuhunga Raod"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.429473,-38.16133864 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangatutu",
+    "X":1812848.31,
+    "Y":5773494.68,
+    "Description":"Access to river on road reserve"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4202347,-38.14840868 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangatutu",
+    "X":1812076.29,
+    "Y":5774950.81,
+    "Description":"Private property but access to downstream can by gained by asking property owner"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6769277,-38.27687354 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Mangawhio Stream",
+    "X":1834160.72,
+    "Y":5760074.63,
+    "Description":"Large waterfall pool boat access only from Lake Arapuni"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.8431527,-38.27215021 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Marokopa",
+    "X":1761230.56,
+    "Y":5762382.04,
+    "Description":"Speedies Road offers good access for fishing in pools upstream to the falls"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0743632,-38.20577071 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Moakurarua Stream",
+    "X":1781622.9,
+    "Y":5769319.94,
+    "Description":"Access via paper road, downstream access must be gained by asking land owner"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0881491,-38.14213165 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Moakurarua Stream",
+    "X":1782989.21,
+    "Y":5776355.02,
+    "Description":"Limited public access please ask land owners"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0826624,-38.16506692 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Moakurarua Stream",
+    "X":1782451.17,
+    "Y":5773820.65,
+    "Description":"Access on true right bank for 4.4 km upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0865899,-38.19140793 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Moakurarua Stream",
+    "X":1782729.44,
+    "Y":5770889.77,
+    "Description":"Access on true right bank for 4.4 km downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1657115,-38.04907582 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ngakoaohia Stream",
+    "X":1790027.88,
+    "Y":5786525.78,
+    "Description":"Excellent summer fishing for trout but very limited public access pleas ask permission to fish on private land"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7312936,-37.42113225 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ohinemuri River",
+    "X":1841697.09,
+    "Y":5854906.19,
+    "Description":"Access up and downstream via Rail Trail track"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7642621,-37.41792023 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ohinemuri River",
+    "X":1844625.58,
+    "Y":5855177.54,
+    "Description":"Access up and downstream via Rail Trail track"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7716911,-37.41388476 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ohinemuri River",
+    "X":1845296.32,
+    "Y":5855606.06,
+    "Description":"Access up and downstream via Rail Trail track"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8702979,-37.85651715 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Omahine Stream",
+    "X":1852521,
+    "Y":5806221,
+    "Description":"Small stream with good access, often holds large browns in autumn."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3830809,-38.60618343 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ongarue Stream",
+    "X":1807507.54,
+    "Y":5724230.67,
+    "Description":"Jones Road access up and downstream good trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4621263,-38.58161974 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Ongarue Stream",
+    "X":1814464.5,
+    "Y":5726775.18,
+    "Description":"Wool shed access paper road, good trout fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.9376843,-38.0375853 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Oparau River",
+    "X":1770044.52,
+    "Y":5788242.68,
+    "Description":"Small stream with easy access mostly on private farm land (requiring permission from landowners) but accessible via paper roads"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.9673538,-38.02856393 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Oparau River",
+    "X":1772669.65,
+    "Y":5789189.07,
+    "Description":"Small stream with easy access mostly on private farm land (requiring permission from landowners) but accessible via paper roads"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.791115,-38.045034 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Oraka River",
+    "X":1844926.019,
+    "Y":5785510.168,
+    "Description":"Excellent access along public walkway"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7323969,-38.07333886 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Pokaiwhenua Stream: above falls",
+    "X":1839680,
+    "Y":5782522,
+    "Description":"Permission required from landowners on Watou Road or Arapuni Road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7199931,-38.04896546 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Pokaiwhenua Stream: below falls",
+    "X":1838671,
+    "Y":5785259,
+    "Description":"Access across private farmland from Arapuni Road, State Highway 1, Horahora Road, Hildreth Road, permission required."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6606537,-37.98324123 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Pokaiwhenua Stream: Mouth",
+    "X":1833672,
+    "Y":5792704,
+    "Description":"Access via Horahora Road, popular location for fishing Lake Karapiro"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3688762,-38.89259325 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Pungapunga River",
+    "X":1805447.42,
+    "Y":5692474.92,
+    "Description":"small wadable stream with lots of trout access up and downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6411652,-37.22645929 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Puriri River",
+    "X":1834324.17,
+    "Y":5876736.64,
+    "Description":"Limited trout numbers but easy access from HW 26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8844885,-37.88439925 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Rapurapu Stream",
+    "X":1853674,
+    "Y":5803088,
+    "Description":"Small stream that can hold large rainbows.  Limited public access."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3551743,-38.63600841 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Raramataha River",
+    "X":1804992.28,
+    "Y":5720983.29,
+    "Description":"Waione Road Bridge access upstream and downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6466064,-36.95279353 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Taranoho Stream",
+    "X":1835653.57,
+    "Y":5907091.15,
+    "Description":"Small stream holding trout with full public access upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2505808,-38.85207847 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Taringamotu River",
+    "X":1795297.67,
+    "Y":5697231.38,
+    "Description":"Trout fishing via Shaw Road access on paper road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2560771,-38.84157726 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Taringamotu River",
+    "X":1795803.47,
+    "Y":5698385.1,
+    "Description":"Trout fishing via Airstrip loop to Jurgen Road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2608841,-38.83521063 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Taringamotu River",
+    "X":1796238.21,
+    "Y":5699081.39,
+    "Description":"Trout fishing via top end of Jurgen Road loop"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.8748836,-38.29265436 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Tawarau River",
+    "X":1763960.32,
+    "Y":5760050.86,
+    "Description":"The Speedies to Were Road track offers 10 km scenic trout fishing water in the Tawarau Forest"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3040614,-37.8053589 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Turtle Lake",
+    "X":1802837.65,
+    "Y":5813279.71,
+    "Description":"Great spot for kids to catch lots of little perch can be caught on small soft baits or spinners"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1539943,-37.08651507 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Upper Mangatawhiri Dam",
+    "X":1791449,
+    "Y":5893359.49,
+    "Description":"Fishing for rainbow trout from dam only, no bait allowed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8422489,-38.03384418 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waihou River: Leslie Road",
+    "X":1849452,
+    "Y":5786616,
+    "Description":"Excellent access along public walkway about 400m walk from car park.  Here the river consists of a series of large springs with very clear water and large rainbows"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8007133,-37.99523267 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waihou River: State Highway 5",
+    "X":1845935,
+    "Y":5791012,
+    "Description":"Upstream of SH5, a reserve provides good access upstream to Whites Road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8137966,-38.01907659 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waihou River: Whites Road",
+    "X":1847004,
+    "Y":5788331,
+    "Description":"Excellent access upstream of Whites Road along public walkway."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1543067,-37.54850098 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1790307.74,
+    "Y":5842096.82,
+    "Description":"Good spin and soft bait fishing for brown trout in Waahi Stream mouth"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1820904,-37.60819518 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1792608.49,
+    "Y":5835416.22,
+    "Description":"Brown trout fishing under willows at boat ramp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.0433044,-37.27678595 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1781154.4,
+    "Y":5872465.25,
+    "Description":"Brown trout fishing  with spinners or soft bait downstream of boat ramp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2206541,-37.71734426 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1795725.89,
+    "Y":5823224.41,
+    "Description":"Good access to fishing downstream along track"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1456705,-37.6621373 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1789256.45,
+    "Y":5829504.66,
+    "Description":"Popular spot to fish for rudd or brown trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2953059,-37.80577096 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1802065.63,
+    "Y":5813252.96,
+    "Description":"Brown trout and rudd can be caught along Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3070196,-37.80626528 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1803095.62,
+    "Y":5813172.7,
+    "Description":"Brown trout and rudd can be caught along Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3180862,-37.80758048 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1804066.37,
+    "Y":5813002.63,
+    "Description":"Brown trout and rudd can be caught along Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.348004,-37.84075588 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1806607.9,
+    "Y":5809255.3,
+    "Description":"Brown trout and rudd can be caught along Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4779212,-37.89536412 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1817880.45,
+    "Y":5802899.56,
+    "Description":"Brown and rainbow trout can be caught along the Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4738498,-37.89901419 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1817511.65,
+    "Y":5802504,
+    "Description":"Brown and rainbow trout can be caught along the Waikato River banks"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.538966,-37.92512565 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1823158.91,
+    "Y":5799452.25,
+    "Description":"Trout fishing below dam (caution swift water)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.5385678,-37.92302922 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1823130.25,
+    "Y":5799685.86,
+    "Description":"Trout fishing below dam (caution swift water)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.5396155,-37.92276124 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1823223.16,
+    "Y":5799713.09,
+    "Description":"Trout fishing below dam (caution swift water)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.5370191,-37.92445517 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waikato River",
+    "X":1822989.79,
+    "Y":5799531.32,
+    "Description":"Parking area for access below dam walking track near parking lot entrance"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.833349,-37.994303 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waimakariri Stream",
+    "X":1848804.5,
+    "Y":5791028.354,
+    "Description":"Large spring-fed stream.  A reserve runs up and downstream for about two kilometres.  Banks upstream have recently been cleared."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3753802,-38.58341342 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waimiha",
+    "X":1806902.31,
+    "Y":5726775.18,
+    "Description":"Anglers must check in with farm manager (027) 275-9644. Driving beyond gate only allowed Monday-Friday 8am-5pm with parking near the woolshed (2 km) in signposted location.  If accessing the property outside of open hours park on Ongarue Waimiha Road. No dogs allowed on property. Stay on farm track and follow orange trail makers to the river entry point (4 Km). Land between the track and river is private until you reach the entry point."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4009145,-38.56631986 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waimiha",
+    "X":1809176.31,
+    "Y":5728614.45,
+    "Description":"Top end of reserve see lower point for entery instructions"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8679067,-37.86877532 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waiomou Stream",
+    "X":1852268.76,
+    "Y":5804867.01,
+    "Description":"Large spring-fed stream with abundant trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8504261,-37.90477269 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waiomou Stream",
+    "X":1850608.64,
+    "Y":5800919.03,
+    "Description":"Large spring-fed stream with abundant trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8494242,-37.91456817 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waiomou Stream",
+    "X":1850487.29,
+    "Y":5799834.58,
+    "Description":"Large spring-fed stream with abundant trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.8415101,-37.94044887 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waiomou Stream",
+    "X":1849703.81,
+    "Y":5796983.48,
+    "Description":"Large spring-fed stream with abundant trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.35327,-38.28305179 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1805827.74,
+    "Y":5760159.44,
+    "Description":"Trout fishing access on up and downstream true left bank"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3399925,-38.2638958 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1804720.09,
+    "Y":5762314.84,
+    "Description":"Trout fishing access on up and downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3370928,-38.25392945 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1804494.32,
+    "Y":5763427.31,
+    "Description":"Trout fishing access via paper road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3312898,-38.3646305 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1803676.44,
+    "Y":5751154.59,
+    "Description":"Trout fishing potential access via paper road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.299397,-38.22524309 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1801274.66,
+    "Y":5766693.54,
+    "Description":"Trout fishing paper road access to river permission must be granted to fish further"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2745642,-38.21024287 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1799141.59,
+    "Y":5768411.94,
+    "Description":"Trout fishing paper road access to river with a reserve on the left bank downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2107759,-38.19137609 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipa River",
+    "X":1793606.14,
+    "Y":5770640.99,
+    "Description":"Fishing access to Waipa near Otorohanga"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6809649,-38.30078856 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipapa River",
+    "X":1834436.92,
+    "Y":5757410.16,
+    "Description":"Trout fishing from bridge at night using flies behind a sinker"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6591658,-38.32129204 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipapa River",
+    "X":1832464.85,
+    "Y":5755189.67,
+    "Description":"Trout fishing access to wadable river"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6736523,-38.30662448 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waipapa River",
+    "X":1833778.61,
+    "Y":5756780.99,
+    "Description":"Waipapa Falls accessible by boat or a long hike trout fishing with fly or spinner"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7221548,-37.42402833 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitawheta River",
+    "X":1840878.93,
+    "Y":5854608.21,
+    "Description":"Trout fishing along walkway"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7476808,-37.43834935 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitawheta River",
+    "X":1843091.78,
+    "Y":5852953.35,
+    "Description":"Trout fishing along walkway"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.780417,-37.46292574 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitawheta River",
+    "X":1845908.05,
+    "Y":5850140.94,
+    "Description":"Trout fishing up and downstream form Dickey Flat Campsite"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7214582,-37.42296503 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitawheta River",
+    "X":1840820.69,
+    "Y":5854727.99,
+    "Description":"Access up and downriver with rainbow and brown trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7859581,-37.40149849 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitekauri River",
+    "X":1846599.86,
+    "Y":5856943.39,
+    "Description":"Access up and downriver with rainbow and brown trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.7835156,-37.41656279 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waitekauri River",
+    "X":1846334.24,
+    "Y":5855278.01,
+    "Description":"Access upstream all the way to Campbell Rd. with rainbow and brown trout"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.6548035,-36.95357912 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waiwawa River",
+    "X":1836381.15,
+    "Y":5906983.66,
+    "Description":"Small stream trout fishing with full public access upstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4666169,-39.11779101 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1813247.67,
+    "Y":5667254.85,
+    "Description":"Intake road access owned by Gennesis Energy access up and down river. Experience with swift crossings recommended upriver access only crossable below 4 m3. Crossing is difficult during flow releases to meet Te Maire minimum flow requirements from 1 Dec to 31 May"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4579417,-39.11490979 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1812506.23,
+    "Y":5667595,
+    "Description":"Vehicle Access via footbridge road (turnoff at metal pit) is limited by road slipping and slumping.  Anglers need to walk the last 300 <96> 400 m. Crossing is swift and not recommended over 6m3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3901347,-39.00529845 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1806963.12,
+    "Y":5679917.6,
+    "Description":"Access via trail and river crossings to upriver fishing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3957891,-39.00105245 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1807465.21,
+    "Y":5680375.99,
+    "Description":"Access via small gate to trail leading to upriver fishing. Crossings are swift but the river can be fished for several km upriver."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3981792,-38.99636341 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1807685.92,
+    "Y":5680890.98,
+    "Description":"Parking for access to \"loop trail\" up and downstream access"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3958432,-38.98336104 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1807521.59,
+    "Y":5682339.46,
+    "Description":"Access via Owhango loop track downriver becomes a gorge"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4003956,-38.94588943 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1808025.59,
+    "Y":5686488.08,
+    "Description":"Stone Jug Road access please follow poled route and posted instructions"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4078222,-38.9397484 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapa River",
+    "X":1808687.29,
+    "Y":5687152.69,
+    "Description":"Te Rena Road access up and downstream access to Whakapapa and Whanganui R. by crossing the Island"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.4719447,-39.1747719 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapaiti",
+    "X":1813535.96,
+    "Y":5660917.72,
+    "Description":"Low numbers of large trout with better fishing downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.5093578,-39.14719734 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whakapapanui",
+    "X":1816852.97,
+    "Y":5663889.57,
+    "Description":"Low numbers of large trout with better fishing downstream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3680981,-38.93226934 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1805265.54,
+    "Y":5688073.04,
+    "Description":"Whanganui River access via walking Main Service Road"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.381545,-38.92668416 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1806447.45,
+    "Y":5688662.56,
+    "Description":"Whanganui River access via Pukehou Road stick to the river and do not enter the gravel pit area"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3426521,-38.9117168 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1803118.26,
+    "Y":5690411.17,
+    "Description":"Power station parking access up and down river"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3465837,-38.89733901 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1803500.26,
+    "Y":5691998.18,
+    "Description":"Trout fishing via Manunui access"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3824724,-38.928548 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1806522.45,
+    "Y":5688453.59,
+    "Description":"Legal access but there is clif so it may be easier to use the rail line"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3062631,-38.88230121 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1800045.37,
+    "Y":5693756.41,
+    "Description":"Trout fishing via camp group access"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.299025,-38.88536451 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1799408.9,
+    "Y":5693432.27,
+    "Description":"Trout fishing via Para Street access"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2731011,-38.88572235 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1797159.11,
+    "Y":5693448.91,
+    "Description":"Trout fishing via Paraone Street path to river"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.2551839,-38.89175175 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Whanganui River",
+    "X":1795588.33,
+    "Y":5692818.3,
+    "Description":"Trout fishing via drive up access to river"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.1326906,-38.09956947 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Moakurarua Stream",
+    "X":1787001.49,
+    "Y":5780989.42,
+    "Description":"Easy corner to fish with parking"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 175.3669817,-38.6575079 ]
+    },
+    "properties": {
+    "Group":"b",
+    "Title":"Waione stream",
+    "X":1805958.52,
+    "Y":5718570.7,
+    "Description":"fishing is on ly permited on paper road at bridge owner has closed fishing upstream"
+    }
+  }
+]
+}
