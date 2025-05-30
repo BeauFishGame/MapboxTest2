@@ -224,16 +224,50 @@
             <label><input type="checkbox" value="spin" checked> Spin</label><br>
             <label><input type="checkbox" value="bait" checked> Bait</label>
         </div>
-
         <div id="point-type-filter">
             <strong style="font-size: 14px;">Filter icon</strong><br>
-            <label><input type="checkbox" value="AccessPoint" checked> Access Point</label><br>
-            <label><input type="checkbox" value="hut" checked> Hut</label><br>
-            <label><input type="checkbox" value="FlyFishing" checked> Fly Fishing</label><br>
-            <label><input type="checkbox" value="Hatchery" checked> Hatchery</label><br>
-            <label><input type="checkbox" value="DesignatedWater" checked> Designated Water</label><br>
-            <label><input type="checkbox" value="Trolling" checked> Trolling</label><br>
-            <label><input type="checkbox" value="BoatRamp" checked> Boat Ramp</label>
+            <label>
+                <input type="checkbox" value="AccessPoint" checked>
+                <img src="images/Revised-Dot-TW - Copy.png" alt="Access Point"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Access Point
+            </label><br>
+            <label>
+                <input type="checkbox" value="hut" checked>
+                <img src="images/Hut-Marker-Dot.png" alt="Hut"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Hut
+            </label><br>
+            <label>
+                <input type="checkbox" value="FlyFishing" checked>
+                <img src="images/Fly-Fishing-Marker-Dot.png" alt="Fly Fishing"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Fly Fishing
+            </label><br>
+            <label>
+                <input type="checkbox" value="Hatchery" checked>
+                <img src="images/Hatchery-Marker-Dot.png" alt="Hatchery"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Hatchery
+            </label><br>
+            <label>
+                <input type="checkbox" value="DesignatedWater" checked>
+                <img src="images/DesignatedWater.png" alt="Designated Water"
+                    style="height:16px; vertical-align:middle; margin-right:4px;">
+                Designated Water
+            </label><br>
+            <label>
+                <input type="checkbox" value="Trolling" checked>
+                <img src="images/Trolling-Marker-Dot-1.png" alt="Trolling"
+                    style="height:16px; vertical-align:middle; margin-right:4px;">
+                Trolling
+            </label><br>
+            <label>
+                <input type="checkbox" value="BoatRamp" checked>
+                <img src="images/Boat-Launch-Marker-Dot.png" alt="Boat Ramp"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Boat Ramp
+            </label>
         </div>
 
         <div style="margin-top: 10px;">
@@ -258,6 +292,7 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/outdoors-v12',
             center: [173.1, -41.4],
+            minZoom: 5,
             zoom: 5
         });
         map.addControl(new mapboxgl.FullscreenControl());
@@ -376,6 +411,7 @@
             loadCustomImages(map, () => {
                 addCustomDataAndLayers(); // only once all images are loaded
             });
+
         });
 
         // Style reload (after style change)
@@ -418,9 +454,56 @@
                 }
             }
 
+            
+            map.addSource('PublicAccessAreas', {
+                type: 'vector',
+                url: 'mapbox://beauchild.PublicAccessAreas' // If using Mapbox
+            });
+
+            map.addLayer({
+                id: 'PublicAccessAreas-fill',
+                type: 'fill',
+                source: 'PublicAccessAreas',
+                minzoom: 12,
+                'source-layer': 'mylayer',
+                paint: {
+                    'fill-color': [
+                        'match',
+                        ['get', 'DataType'],
+                        'DOC Conservation Area', '#2d6c3e',        // blue
+                        'Esplanade Reserve', '#66f0cb',            // green
+                        'Esplanade Strip', '#ff66dc',              // pink
+                        'Hydro Parcel', '#abecff',                  // red
+                        'Non-Primary Parcel', '#ff7f00',            // orange
+                        'Public Access Easement', '#ffd8f1',        // purple
+                        'Reserve Land', '#a9cb66',                   // light green
+                        'Road Parcel', '#cca3e1',                     // light blue
+                        'Walkway Easement', '#ffb2b2',                 // yellow
+                        /* default color if none match */
+                        '#cccccc'
+                    ],
+                    'fill-opacity': [
+                        'match',
+                        ['get', 'DataType'],
+                        'DOC Conservation Area', .5,        // blue
+                        'Esplanade Reserve', .5,            // green
+                        'Esplanade Strip', .5,              // pink
+                        'Hydro Parcel', .5,                  // red
+                        'Non-Primary Parcel', .1,            // orange
+                        'Public Access Easement', .5,        // purple
+                        'Reserve Land', .5,                   // light green
+                        'Road Parcel', .5,                     // light blue
+                        'Walkway Easement', .5,                 // yellow
+                        /* default color if none match */
+                        .5
+                    ],
+                }
+            }, firstSymbolId);
+
+
             map.addSource('FG Regions', {
                 type: 'geojson',
-                data: 'FG regions.geojson'
+                data: 'FG_dissolved.geojson'
             });
 
             map.addLayer({
@@ -429,7 +512,8 @@
                 source: 'FG Regions',
                 layout: {
                     'line-join': 'round',
-                    'line-cap': 'round'
+                    'line-cap': 'round',
+                    visability:'none'
                 },
                 paint: {
                     'line-color': 'grey',
@@ -437,6 +521,34 @@
                     'line-opacity': 0.6
                 }
             }, firstSymbolId);
+
+// Add your centroid points source
+map.addSource('FG Region Centroids', {
+  type: 'geojson',
+  data: 'FG_region_centroids.geojson'  // your centroid GeoJSON file
+});
+
+// Add the label layer for the centroids
+map.addLayer({
+  id: 'FG Region Labels',
+  type: 'symbol',
+  source: 'FG Region Centroids',
+  maxzoom: 7,
+  layout: {
+    'text-field': ['get', 'NAME'],       // use the NAME property
+    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+    'text-size': 14,
+    'text-anchor': 'center',
+    'text-allow-overlap': false  ,
+    visability:'none'       // prevents overlapping labels
+  },
+  paint: {
+    'text-color': '#000000',
+    'text-halo-color': '#ffffff',
+    'text-halo-width': 1.5
+  }
+});
+
 
             map.addSource('AW Rivers', {
                 type: 'geojson',
@@ -475,7 +587,7 @@
                     ],
                     'line-opacity': .9
                 }
-            });
+            }, firstSymbolId);
 
             map.addSource('Lakes', {
                 type: 'geojson',
@@ -545,51 +657,6 @@
                 }
             });
 
-
-            map.addSource('PublicAccessAreas', {
-                type: 'vector',
-                url: 'mapbox://beauchild.PublicAccessAreas' // If using Mapbox
-            });
-
-            map.addLayer({
-                id: 'PublicAccessAreas-fill',
-                type: 'fill',
-                source: 'PublicAccessAreas',
-                minzoom: 12,
-                'source-layer': 'mylayer',
-                paint: {
-                    'fill-color': [
-                        'match',
-                        ['get', 'DataType'],
-                        'DOC Conservation Area', '#2d6c3e',        // blue
-                        'Esplanade Reserve', '#66f0cb',            // green
-                        'Esplanade Strip', '#ff66dc',              // pink
-                        'Hydro Parcel', '#abecff',                  // red
-                        'Non-Primary Parcel', '#ff7f00',            // orange
-                        'Public Access Easement', '#ffd8f1',        // purple
-                        'Reserve Land', '#a9cb66',                   // light green
-                        'Road Parcel', '#cca3e1',                     // light blue
-                        'Walkway Easement', '#ffb2b2',                 // yellow
-                        /* default color if none match */
-                        '#cccccc'
-                    ],
-                    'fill-opacity': [
-                        'match',
-                        ['get', 'DataType'],
-                        'DOC Conservation Area', .5,        // blue
-                        'Esplanade Reserve', .5,            // green
-                        'Esplanade Strip', .5,              // pink
-                        'Hydro Parcel', .5,                  // red
-                        'Non-Primary Parcel', .1,            // orange
-                        'Public Access Easement', .5,        // purple
-                        'Reserve Land', .5,                   // light green
-                        'Road Parcel', .5,                     // light blue
-                        'Walkway Easement', .5,                 // yellow
-                        /* default color if none match */
-                        .5
-                    ],
-                }
-            }, firstSymbolId);
 
 
 
@@ -817,23 +884,40 @@
 
         }
 
+  
 
-        document.getElementById('toggle-fg-regions').addEventListener('click', () => {
-            const layerId = 'FG Regions-line'; // correct layer id
-            if (!map.getLayer(layerId)) {
-                console.warn(`Layer "${layerId}" not found.`);
-                return;
-            }
-            const visibility = map.getLayoutProperty(layerId, 'visibility');
 
-            if (visibility === 'visible' || visibility === undefined) {
-                map.setLayoutProperty(layerId, 'visibility', 'none');
-                document.getElementById('toggle-fg-regions').textContent = 'Show FG Regions';
-            } else {
-                map.setLayoutProperty(layerId, 'visibility', 'visible');
-                document.getElementById('toggle-fg-regions').textContent = 'Hide FG Regions';
-            }
-        });
+document.getElementById('toggle-fg-regions').addEventListener('click', () => {
+    const lineLayerId = 'FG Regions-line';
+    const labelLayerId = 'FG Region Labels';
+
+    // Check if line layer exists
+    if (!map.getLayer(lineLayerId)) {
+        console.warn(`Layer "${lineLayerId}" not found.`);
+        return;
+    }
+    // Also check if label layer exists
+    if (!map.getLayer(labelLayerId)) {
+        console.warn(`Layer "${labelLayerId}" not found.`);
+        return;
+    }
+
+    // Get current visibility of the line layer (assuming labels match it)
+    const visibility = map.getLayoutProperty(lineLayerId, 'visibility');
+
+    if (visibility === 'visible' || visibility === undefined) {
+        // Hide both line and labels
+        map.setLayoutProperty(lineLayerId, 'visibility', 'none');
+        map.setLayoutProperty(labelLayerId, 'visibility', 'none');
+        document.getElementById('toggle-fg-regions').textContent = 'Show FG Regions';
+    } else {
+        // Show both line and labels
+        map.setLayoutProperty(lineLayerId, 'visibility', 'visible');
+        map.setLayoutProperty(labelLayerId, 'visibility', 'visible');
+        document.getElementById('toggle-fg-regions').textContent = 'Hide FG Regions';
+    }
+});
+
 
 
 
