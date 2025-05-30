@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "FG_region_centroids",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "NAME": "CENTRAL SOUTH ISLAND F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 170.720243664469365, -44.190483883224893 ] } },
+{ "type": "Feature", "properties": { "NAME": "EASTERN  F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 176.994028063396541, -38.391222368115635 ] } },
+{ "type": "Feature", "properties": { "NAME": "HAWKES BAY F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 176.576314321298184, -39.544608881262121 ] } },
+{ "type": "Feature", "properties": { "NAME": "NELSON MARBOROUGH F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 173.131803380282065, -41.678439482276985 ] } },
+{ "type": "Feature", "properties": { "NAME": "NORTH CANTERBURY F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 172.298077577271698, -43.100842424840316 ] } },
+{ "type": "Feature", "properties": { "NAME": "NORTHLAND F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 173.831473963797151, -35.514823432949747 ] } },
+{ "type": "Feature", "properties": { "NAME": "OTAGO F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 169.454681417014342, -45.27094974141216 ] } },
+{ "type": "Feature", "properties": { "NAME": "SOUTHLAND F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 167.924156159488177, -45.724137720450081 ] } },
+{ "type": "Feature", "properties": { "NAME": "TARANAKI F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 174.821323159256508, -39.41415034136962 ] } },
+{ "type": "Feature", "properties": { "NAME": "WAIKATO F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 175.221586897348516, -37.71887914699704 ] } },
+{ "type": "Feature", "properties": { "NAME": "WELLINGTON F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 175.688913555147593, -40.532065142086786 ] } },
+{ "type": "Feature", "properties": { "NAME": "WEST COAST F&G Council" }, "geometry": { "type": "Point", "coordinates": [ 170.864453285613394, -42.804564182720767 ] } },
+{ "type": "Feature", "properties": { "NAME": null }, "geometry": null }
+]
+}
