@@ -7,6 +7,9 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+  
+   
+
     <style>
         body {
             margin: 0;
@@ -106,13 +109,13 @@
 
         .subtitle-main {
             font-size: 1.3em;
-            font-weight: 500;
+            font-weight: bold;
             color: #333;
             margin-top: 4px;
         }
 
         .subtitle-region {
-            font-size: 1.2em;
+            font-size: 1.em;
             font-style: italic;
             color: #666;
             margin-bottom: 4px;
@@ -199,15 +202,21 @@
 
 <body>
 
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css" type="text/css">
+
     <div id="map"></div>
     <!-- The rest of your content -->
 
-    <div id="menu">
-        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
-        <label for="satellite-streets-v12">Satellite</label>
-        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
-        <label for="outdoors-v12">Outdoors</label>
-    </div>
+ <div id="menu">
+    <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
+    <label for="satellite-streets-v12">Satellite</label>
+
+    <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
+    <label for="outdoors-v12">Outdoors</label>
+
+
+</div>
 
     <button onclick="toggleFilters()" id="filter-toggle-btn"
         style="position: absolute; top: 10px; right: 50px; z-index: 1000;">
@@ -220,10 +229,13 @@
 
         <div id="method-filters" style="margin-bottom: 10px;">
             <strong style="font-size: 14px;">Filter waterway by method</strong><br>
+            <label><input type="checkbox" value="fly_only" > Fly only</label><br>
             <label><input type="checkbox" value="fly" checked> Fly</label><br>
             <label><input type="checkbox" value="spin" checked> Spin</label><br>
-            <label><input type="checkbox" value="bait" checked> Bait</label>
+            <label><input type="checkbox" value="bait" checked> Bait</label><br>
+            <label><input type="checkbox" value="closed" checked> Closed</label>
         </div>
+        
         <div id="point-type-filter">
             <strong style="font-size: 14px;">Filter icon</strong><br>
             <label>
@@ -310,6 +322,18 @@
         map.dragRotate.disable();
 
 
+map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl,
+                countries: 'nz',
+            marker: false, // disable markers
+            zoom: 12,
+        }),'top-left'
+
+    );
+
+
         // disable map rotation using touch rotation gesture
         map.touchZoomRotate.disableRotation();
 
@@ -318,21 +342,22 @@
             const props = feature.properties;
             const displayFields = {
                 methods: 'Method',
-                open: 'Open',
-                limtrout: 'Trout Limit',
+                open_season: 'Open',
+                lim_trout: 'Trout Limit',
                 Description: "Description",
+                additional_requirements: "Additional Requirements",
             };
 
             let content = `
     <div class="map-overlay-inner">
         <div class="map-overlay-drag-handle"></div>
         <button class="close-button" onclick="document.getElementById('properties').style.display='none'">×</button>
-        <code class="card-title">${props.name || props.Title || 'No Title'}</code>
+        <code class="card-title">${props.Water || props.name || props.Title || 'No Title'}</code>
     `;
 
             // Subtitle
-            if (props.subtitle) {
-                content += `<div class="card-subtitle subtitle-main">${props.subtitle}</div>`;
+            if (props.subtitle || props.Section) {
+                content += `<div class="card-subtitle subtitle-main">${props.subtitle || props.Section}</div>`;
             }
 
             // Region
@@ -358,15 +383,10 @@
         };
 
 
-
-
-
         let selectedPoint = null;
         let selectedRiver = null;
-        let selectedLake = null;
         let hoveredAccessPointId = null;
         let hoveredRiverId = null;
-        let hoveredLakeId = null;
         let toggleIndex = 0; // 0 or 1, to switch between point and line
         // Before adding the layer, load and add your icon image:
 
@@ -454,7 +474,7 @@
                 }
             }
 
-            
+
             map.addSource('PublicAccessAreas', {
                 type: 'vector',
                 url: 'mapbox://beauchild.PublicAccessAreas' // If using Mapbox
@@ -464,7 +484,7 @@
                 id: 'PublicAccessAreas-fill',
                 type: 'fill',
                 source: 'PublicAccessAreas',
-                minzoom: 12,
+                minzoom: 13,
                 'source-layer': 'mylayer',
                 paint: {
                     'fill-color': [
@@ -500,6 +520,7 @@
                 }
             }, firstSymbolId);
 
+        
 
             map.addSource('FG Regions', {
                 type: 'geojson',
@@ -513,7 +534,7 @@
                 layout: {
                     'line-join': 'round',
                     'line-cap': 'round',
-                    visability:'none'
+                    visability: 'none'
                 },
                 paint: {
                     'line-color': 'grey',
@@ -522,83 +543,87 @@
                 }
             }, firstSymbolId);
 
-// Add your centroid points source
-map.addSource('FG Region Centroids', {
-  type: 'geojson',
-  data: 'FG_region_centroids.geojson'  // your centroid GeoJSON file
-});
+            // Add your centroid points source
+            map.addSource('FG Region Centroids', {
+                type: 'geojson',
+                data: 'FG_region_centroids.geojson'  // your centroid GeoJSON file
+            });
 
-// Add the label layer for the centroids
-map.addLayer({
-  id: 'FG Region Labels',
-  type: 'symbol',
-  source: 'FG Region Centroids',
-  maxzoom: 7,
-  layout: {
-    'text-field': ['get', 'NAME'],       // use the NAME property
-    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-    'text-size': 14,
-    'text-anchor': 'center',
-    'text-allow-overlap': false  ,
-    visability:'none'       // prevents overlapping labels
-  },
-  paint: {
-    'text-color': '#000000',
-    'text-halo-color': '#ffffff',
-    'text-halo-width': 1.5
-  }
-});
+            // Add the label layer for the centroids
+            map.addLayer({
+                id: 'FG Region Labels',
+                type: 'symbol',
+                source: 'FG Region Centroids',
+                maxzoom: 7,
+                layout: {
+                    'text-field': ['get', 'NAME'],       // use the NAME property
+                    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                    'text-size': 11,
+                    'text-anchor': 'center',
+                    'text-allow-overlap': true,
+                    visability: 'none'       // prevents overlapping labels
+                },
+                paint: {
+                    'text-color': '#000000',
+                    'text-halo-color': '#ffffff',
+                    'text-halo-width': 1.5
+                }
+            });
 
 
             map.addSource('AW Rivers', {
                 type: 'geojson',
-                data: 'AWRivers28May.geojson',
+                data: 'AWRivers12June.geojson',
                 generateId: true
             });
 
 
 
+           map.addLayer({
+    id: 'AW Rivers-line',
+    type: 'line',
+    source: 'AW Rivers',
+    minzoom: 7,
+    layout: {
+        'line-join': 'round',
+        'line-cap': 'round'
+    },
+    paint: {
+        'line-color': [
+            'case',
+            ['==', ['get', 'methods'], 'CLOSED'],
+            [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false], '#d73027', // dark red
+                ['boolean', ['feature-state', 'highlight'], false], '#fc8d59', // light red
+                '#fc8d59' // pale red/orange
+            ],
+            // else (methods ≠ "CLOSED")
+            [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false], '#7983ec',
+                ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6',
+                '#79bcec'
+            ]
+        ],
+
+        'line-width': [
+            'case',
+            ['boolean', ['feature-state', 'selected'], false], 10,
+            ['boolean', ['feature-state', 'highlight'], false], 9,
+            4
+        ],
+
+        'line-opacity': 1
+    }
+}, firstSymbolId);
+
+
+
             map.addLayer({
-                id: 'AW Rivers-line',
-                type: 'line',
-                source: 'AW Rivers',
-                minzoom: 7,
-                layout: {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-                paint: {
-                    'line-color': [
-                        'case',
-                        ['boolean', ['feature-state', 'selected'], false],
-                        '#7983ec',
-                        ['boolean', ['feature-state', 'highlight'], false],
-                        '#4ca6e6',
-                        '#79bcec'
-                    ],
-
-                    'line-width': [
-                        'case',
-                        ['boolean', ['feature-state', 'selected'], false],
-                        10,
-                        ['boolean', ['feature-state', 'highlight'], false],
-                        9,
-                        6
-                    ],
-                    'line-opacity': .9
-                }
-            }, firstSymbolId);
-
-            map.addSource('Lakes', {
-                type: 'geojson',
-                data: 'Lakes29May.geojson',
-                generateId: true
-            });
-
-            map.addLayer({
-                id: 'Lakes-poly',
+                id: 'AW Rivers-fill',
                 type: 'fill',
-                source: 'Lakes',
+                source: 'AW Rivers',
                 paint: {
                     'fill-color': [
                         'case',
@@ -608,7 +633,7 @@ map.addLayer({
                         '#4ca6e6',
                         '#79bcec'
                     ],
-                    'fill-opacity': .8
+                    'fill-opacity': 1
                 }
             }, firstSymbolId);
 
@@ -648,7 +673,7 @@ map.addLayer({
                 id: 'data-points-all',
                 type: 'symbol',
                 source: 'data-points',
-                minzoom: 10,
+                minzoom: 9.5,
                 layout: {
                     'icon-image': ['concat', ['get', 'point_type'], '-icon'],
                     'icon-size': 0.14,
@@ -738,21 +763,9 @@ map.addLayer({
                 updateIconSize();
             });
 
-            // Click elsewhere — clear selection
-            map.on('click', e => {
-                const features = map.queryRenderedFeatures(e.point, {
-                    layers: ['data-points-all']
-                });
-
-                if (features.length === 0 && selectedFeatureId !== null) {
-                    selectedFeatureId = null;
-                    updateIconSize();
-                }
-            });
-
             map.on('click', (e) => {
                 const features = map.queryRenderedFeatures(e.point, {
-                    layers: ['data-points-all', 'AW Rivers-line', 'Lakes-poly']
+                    layers: ['data-points-all', 'AW Rivers-line', 'AW Rivers-fill']
                 });
 
                 // Deselect previous selection
@@ -765,10 +778,6 @@ map.addLayer({
                     selectedRiver = null;
                 }
 
-                if (selectedLake) {
-                    map.setFeatureState({ source: 'Lakes', id: selectedLake.id }, { selected: false });
-                    selectedLake = null;
-                }
 
                 if (features.length === 0) {
                     card.style.display = 'none';
@@ -777,8 +786,8 @@ map.addLayer({
 
                 // Prioritize selecting points over lines
                 const pointFeature = features.find(f => f.layer.id === 'data-points-all');
-                const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line');
-                const lakeFeature = features.find(f => f.layer.id === 'Lakes-poly');
+                const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line') 
+                        || features.find(f => f.layer.id === 'AW Rivers-fill');
 
                 if (pointFeature) {
                     selectedPoint = pointFeature;
@@ -789,28 +798,42 @@ map.addLayer({
                     map.setFeatureState({ source: 'AW Rivers', id: riverFeature.id }, { selected: true });
                     showCard(riverFeature);
                 }
-                else if (lakeFeature) {
-                    selectedLake = lakeFeature;
-                    map.setFeatureState({ source: 'Lakes', id: lakeFeature.id }, { selected: true });
-                    showCard(lakeFeature);
-                }
+
             });
 
+            map.on('click', e => {
+    const features = map.queryRenderedFeatures(e.point, {
+        layers: ['data-points-all']
+    });
+
+    if (features.length === 0 && selectedFeatureId !== null) {
+        selectedFeatureId = null;
+        updateIconSize();
+    }
+});
 
 
             let isHovering = {
                 points: false,
                 rivers: false,
-                lakes: false
             };
 
             function updateCursor() {
-                if (isHovering.points || isHovering.rivers || isHovering.lakes) {
+                if (isHovering.points || isHovering.rivers ) {
                     map.getCanvas().style.cursor = 'pointer';
                 } else {
                     map.getCanvas().style.cursor = '';
                 }
             }
+
+            function updateCursor() {
+    if (isHovering.points || hoveringLayers.has('line') || hoveringLayers.has('fill')) {
+        map.getCanvas().style.cursor = 'pointer';
+    } else {
+        map.getCanvas().style.cursor = '';
+    }
+}
+
 
 
             map.on('mouseenter', 'data-points-all', (e) => {
@@ -835,116 +858,81 @@ map.addLayer({
                 }
             });
 
-
-
-            map.on('mouseenter', 'AW Rivers-line', (e) => {
-                isHovering.rivers = true;
-                updateCursor();
-
-                const feature = e.features[0];
-                if (hoveredRiverId !== null && hoveredRiverId !== feature.id) {
-                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
-                }
-                hoveredRiverId = feature.id;
-                map.setFeatureState({ source: 'AW Rivers', id: feature.id }, { highlight: true });
-            });
-
-            map.on('mouseleave', 'AW Rivers-line', () => {
-                isHovering.rivers = false;
-                updateCursor();
-
-                if (hoveredRiverId !== null) {
-                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
-                    hoveredRiverId = null;
-                }
-            });
-
-
-            map.on('mouseenter', 'Lakes-poly', (e) => {
-                isHovering.lakes = true;
-                updateCursor();
-
-                const feature = e.features[0];
-                if (hoveredLakeId !== null && hoveredLakeId !== feature.id) {
-                    map.setFeatureState({ source: 'Lakes', id: hoveredLakeId }, { highlight: false });
-                }
-                hoveredLakeId = feature.id;
-                map.setFeatureState({ source: 'Lakes', id: feature.id }, { highlight: true });
-            });
-
-            map.on('mouseleave', 'Lakes-poly', () => {
-                isHovering.lakes = false;
-                updateCursor();
-
-                if (hoveredLakeId !== null) {
-                    map.setFeatureState({ source: 'Lakes', id: hoveredLakeId }, { highlight: false });
-                    hoveredLakeId = null;
-                }
-            });
-
+            
         }
 
-  
 
 
-document.getElementById('toggle-fg-regions').addEventListener('click', () => {
-    const lineLayerId = 'FG Regions-line';
-    const labelLayerId = 'FG Region Labels';
 
-    // Check if line layer exists
-    if (!map.getLayer(lineLayerId)) {
-        console.warn(`Layer "${lineLayerId}" not found.`);
-        return;
-    }
-    // Also check if label layer exists
-    if (!map.getLayer(labelLayerId)) {
-        console.warn(`Layer "${labelLayerId}" not found.`);
-        return;
-    }
+        document.getElementById('toggle-fg-regions').addEventListener('click', () => {
+            const lineLayerId = 'FG Regions-line';
+            const labelLayerId = 'FG Region Labels';
 
-    // Get current visibility of the line layer (assuming labels match it)
-    const visibility = map.getLayoutProperty(lineLayerId, 'visibility');
+            // Check if line layer exists
+            if (!map.getLayer(lineLayerId)) {
+                console.warn(`Layer "${lineLayerId}" not found.`);
+                return;
+            }
+            // Also check if label layer exists
+            if (!map.getLayer(labelLayerId)) {
+                console.warn(`Layer "${labelLayerId}" not found.`);
+                return;
+            }
 
-    if (visibility === 'visible' || visibility === undefined) {
-        // Hide both line and labels
-        map.setLayoutProperty(lineLayerId, 'visibility', 'none');
-        map.setLayoutProperty(labelLayerId, 'visibility', 'none');
-        document.getElementById('toggle-fg-regions').textContent = 'Show FG Regions';
+            // Get current visibility of the line layer (assuming labels match it)
+            const visibility = map.getLayoutProperty(lineLayerId, 'visibility');
+
+            if (visibility === 'visible' || visibility === undefined) {
+                // Hide both line and labels
+                map.setLayoutProperty(lineLayerId, 'visibility', 'none');
+                map.setLayoutProperty(labelLayerId, 'visibility', 'none');
+                document.getElementById('toggle-fg-regions').textContent = 'Show FG Regions';
+            } else {
+                // Show both line and labels
+                map.setLayoutProperty(lineLayerId, 'visibility', 'visible');
+                map.setLayoutProperty(labelLayerId, 'visibility', 'visible');
+                document.getElementById('toggle-fg-regions').textContent = 'Hide FG Regions';
+            }
+        });
+
+
+function updateRiverFilter() {
+    // Get checked filter values from UI
+    const checked = Array.from(document.querySelectorAll('#method-filters input:checked'))
+        .map(input => input.value.toLowerCase());
+
+    const noFilter = ['==', 'fly', -1];  // Always false to hide all
+
+    let filter;
+
+    // Special case: "Fly Only" selected
+    if (checked.includes('fly_only')) {
+        filter = ['all',
+            ['==', ['get', 'fly'], 1],
+            ['==', ['get', 'spin'], 0],
+            ['==', ['get', 'bait'], 0]
+        ];
     } else {
-        // Show both line and labels
-        map.setLayoutProperty(lineLayerId, 'visibility', 'visible');
-        map.setLayoutProperty(labelLayerId, 'visibility', 'visible');
-        document.getElementById('toggle-fg-regions').textContent = 'Hide FG Regions';
+        // General case
+        const validMethods = ['fly', 'spin', 'bait', 'closed'];
+        const selectedFilters = checked
+            .filter(method => validMethods.includes(method))
+            .map(method => ['==', ['get', method], 1]);
+
+        filter = selectedFilters.length > 0 ? ['any', ...selectedFilters] : noFilter;
     }
-});
+
+    // Apply the filter to both layers
+    if (map.getLayer('AW Rivers-line')) {
+        map.setFilter('AW Rivers-line', filter);
+    }
+
+    if (map.getLayer('AW Rivers-fill')) {
+        map.setFilter('AW Rivers-fill', filter);
+    }
+}
 
 
-
-
-        function updateRiverFilter() {
-            const checked = Array.from(document.querySelectorAll('#method-filters input:checked'))
-                .map(input => input.value.toLowerCase());
-
-            const noFilter = ['==', 'fly', -1];  // Always false filter
-
-            if (map.getLayer('AW Rivers-line')) {
-                if (checked.length === 0) {
-                    map.setFilter('AW Rivers-line', noFilter);
-                } else {
-                    const filter = ['any', ...checked.map(method => ['==', ['get', method], 1])];
-                    map.setFilter('AW Rivers-line', filter);
-                }
-            }
-
-            if (map.getLayer('Lakes-poly')) {
-                if (checked.length === 0) {
-                    map.setFilter('Lakes-poly', noFilter);
-                } else {
-                    const filter = ['any', ...checked.map(method => ['==', ['get', method], 1])];
-                    map.setFilter('Lakes-poly', filter);
-                }
-            }
-        }
 
         // Add event listeners to checkboxes
         document.querySelectorAll('#method-filters input').forEach(input => {
@@ -1027,11 +1015,13 @@ document.getElementById('toggle-fg-regions').addEventListener('click', () => {
                 document.removeEventListener('touchend', stopDrag);
             }
         })();
-        const hydroButton = document.createElement('button');
-        hydroButton.textContent = 'Load Local Hydro Parcels';
-        hydroButton.className = 'hydro-button'; // use CSS class
-        hydroButton.style.display = 'none'; // still hide initially
 
+
+
+        //const hydroButton = document.createElement('button');
+        //hydroButton.textContent = 'Load Local Hydro Parcels';
+        //hydroButton.className = 'hydro-button'; // use CSS class
+        //hydroButton.style.display = 'none'; // still hide initially
 
         // Add the button to the map container
         map.getContainer().appendChild(hydroButton);
@@ -1101,7 +1091,7 @@ document.getElementById('toggle-fg-regions').addEventListener('click', () => {
                             source: 'hydro',
                             paint: {
                                 'fill-color': 'pink',
-                                'fill-opacity': 0.7
+                                'fill-opacity': 0.4
                             }
                         });
                     }
@@ -1117,7 +1107,7 @@ document.getElementById('toggle-fg-regions').addEventListener('click', () => {
                             source: 'road',
                             paint: {
                                 'fill-color': 'pink',
-                                'fill-opacity': 0.7
+                                'fill-opacity': 0.4
                             }
                         });
                     }
@@ -1133,7 +1123,7 @@ document.getElementById('toggle-fg-regions').addEventListener('click', () => {
                             source: 'private',
                             paint: {
                                 'fill-color': 'red',
-                                'fill-opacity': 0.5
+                                'fill-opacity': 0.4
                             }
                         });
                     }
