@@ -7,8 +7,8 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
-  
-   
+
+
 
     <style>
         body {
@@ -202,21 +202,24 @@
 
 <body>
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css" type="text/css">
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css"
+        type="text/css">
 
     <div id="map"></div>
     <!-- The rest of your content -->
 
- <div id="menu">
-    <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
-    <label for="satellite-streets-v12">Satellite</label>
+    <div id="menu">
+        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
+        <label for="satellite-streets-v12">Satellite</label>
 
-    <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
-    <label for="outdoors-v12">Outdoors</label>
+        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
+        <label for="outdoors-v12">Outdoors</label>
 
 
-</div>
+    </div>
 
     <button onclick="toggleFilters()" id="filter-toggle-btn"
         style="position: absolute; top: 10px; right: 50px; z-index: 1000;">
@@ -229,13 +232,13 @@
 
         <div id="method-filters" style="margin-bottom: 10px;">
             <strong style="font-size: 14px;">Filter waterway by method</strong><br>
-            <label><input type="checkbox" value="fly_only" > Fly only</label><br>
+            <label><input type="checkbox" value="fly_only"> Fly only</label><br>
             <label><input type="checkbox" value="fly" checked> Fly</label><br>
             <label><input type="checkbox" value="spin" checked> Spin</label><br>
             <label><input type="checkbox" value="bait" checked> Bait</label><br>
             <label><input type="checkbox" value="closed" checked> Closed</label>
         </div>
-        
+
         <div id="point-type-filter">
             <strong style="font-size: 14px;">Filter icon</strong><br>
             <label>
@@ -322,16 +325,16 @@
         map.dragRotate.disable();
 
 
-map.addControl(
-        new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl,
+        map.addControl(
+            new MapboxGeocoder({
+                accessToken: mapboxgl.accessToken,
+                mapboxgl: mapboxgl,
                 countries: 'nz',
-            marker: false, // disable markers
-            zoom: 12,
-        }),'top-left'
+                marker: false, // disable markers
+                zoom: 12,
+            }), 'top-left'
 
-    );
+        );
 
 
         // disable map rotation using touch rotation gesture
@@ -520,7 +523,7 @@ map.addControl(
                 }
             }, firstSymbolId);
 
-        
+
 
             map.addSource('FG Regions', {
                 type: 'geojson',
@@ -579,44 +582,44 @@ map.addControl(
 
 
 
-           map.addLayer({
-    id: 'AW Rivers-line',
-    type: 'line',
-    source: 'AW Rivers',
-    minzoom: 7,
-    layout: {
-        'line-join': 'round',
-        'line-cap': 'round'
-    },
-    paint: {
-        'line-color': [
-            'case',
-            ['==', ['get', 'methods'], 'CLOSED'],
-            [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false], '#d73027', // dark red
-                ['boolean', ['feature-state', 'highlight'], false], '#fc8d59', // light red
-                '#fc8d59' // pale red/orange
-            ],
-            // else (methods ≠ "CLOSED")
-            [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false], '#7983ec',
-                ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6',
-                '#79bcec'
-            ]
-        ],
+            map.addLayer({
+                id: 'AW Rivers-line',
+                type: 'line',
+                source: 'AW Rivers',
+                minzoom: 7,
+                layout: {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                paint: {
+                    'line-color': [
+                        'case',
+                        ['==', ['get', 'methods'], 'CLOSED'],
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#d73027', // dark red
+                            ['boolean', ['feature-state', 'highlight'], false], '#fc8d59', // light red
+                            '#fc8d59' // pale red/orange
+                        ],
+                        // else (methods ≠ "CLOSED")
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#7983ec',
+                            ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6',
+                            '#79bcec'
+                        ]
+                    ],
 
-        'line-width': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false], 10,
-            ['boolean', ['feature-state', 'highlight'], false], 9,
-            4
-        ],
+                    'line-width': [
+                        'case',
+                        ['boolean', ['feature-state', 'selected'], false], 10,
+                        ['boolean', ['feature-state', 'highlight'], false], 9,
+                        4
+                    ],
 
-        'line-opacity': 1
-    }
-}, firstSymbolId);
+                    'line-opacity': 1
+                }
+            }, firstSymbolId);
 
 
 
@@ -681,7 +684,6 @@ map.addControl(
                     'icon-allow-overlap': true
                 }
             });
-
 
 
 
@@ -786,8 +788,8 @@ map.addControl(
 
                 // Prioritize selecting points over lines
                 const pointFeature = features.find(f => f.layer.id === 'data-points-all');
-                const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line') 
-                        || features.find(f => f.layer.id === 'AW Rivers-fill');
+                const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line')
+                    || features.find(f => f.layer.id === 'AW Rivers-fill');
 
                 if (pointFeature) {
                     selectedPoint = pointFeature;
@@ -802,15 +804,15 @@ map.addControl(
             });
 
             map.on('click', e => {
-    const features = map.queryRenderedFeatures(e.point, {
-        layers: ['data-points-all']
-    });
+                const features = map.queryRenderedFeatures(e.point, {
+                    layers: ['data-points-all']
+                });
 
-    if (features.length === 0 && selectedFeatureId !== null) {
-        selectedFeatureId = null;
-        updateIconSize();
-    }
-});
+                if (features.length === 0 && selectedFeatureId !== null) {
+                    selectedFeatureId = null;
+                    updateIconSize();
+                }
+            });
 
 
             let isHovering = {
@@ -819,21 +821,12 @@ map.addControl(
             };
 
             function updateCursor() {
-                if (isHovering.points || isHovering.rivers ) {
+                if (isHovering.points || isHovering.rivers) {
                     map.getCanvas().style.cursor = 'pointer';
                 } else {
                     map.getCanvas().style.cursor = '';
                 }
             }
-
-            function updateCursor() {
-    if (isHovering.points || hoveringLayers.has('line') || hoveringLayers.has('fill')) {
-        map.getCanvas().style.cursor = 'pointer';
-    } else {
-        map.getCanvas().style.cursor = '';
-    }
-}
-
 
 
             map.on('mouseenter', 'data-points-all', (e) => {
@@ -858,7 +851,62 @@ map.addControl(
                 }
             });
 
-            
+
+            let hoveredRiverId = null;
+            let hoveringLayers = new Set();
+
+            function updateHighlightState(id) {
+                // If not hovering any layer, clear highlight
+                if (!hoveringLayers.has('line') && !hoveringLayers.has('fill')) {
+                    if (hoveredRiverId !== null) {
+                        map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
+                        hoveredRiverId = null;
+                    }
+                }
+            }
+
+
+            // FILL hover
+            map.on('mouseenter', 'AW Rivers-line', (e) => {
+                isHovering.rivers = true;
+                updateCursor();
+
+                const feature = e.features[0];
+                if (hoveredRiverId !== null && hoveredRiverId !== feature.id) {
+                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
+                }
+                hoveredRiverId = feature.id;
+                map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: true });
+            });
+
+            map.on('mouseleave', 'AW Rivers-line', () => {
+                isHovering.rivers = false;
+                updateCursor();
+                updateHighlightState(hoveredRiverId);
+            });
+
+
+            // FILL hover
+            map.on('mouseenter', 'AW Rivers-fill', (e) => {
+                isHovering.rivers = true;
+                updateCursor();
+
+                const feature = e.features[0];
+                if (hoveredRiverId !== null && hoveredRiverId !== feature.id) {
+                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
+                }
+                hoveredRiverId = feature.id;
+                map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: true });
+            });
+
+            map.on('mouseleave', 'AW Rivers-fill', () => {
+                isHovering.rivers = false;
+                updateCursor();
+                updateHighlightState(hoveredRiverId);
+            });
+
+
+
         }
 
 
@@ -896,41 +944,41 @@ map.addControl(
         });
 
 
-function updateRiverFilter() {
-    // Get checked filter values from UI
-    const checked = Array.from(document.querySelectorAll('#method-filters input:checked'))
-        .map(input => input.value.toLowerCase());
+        function updateRiverFilter() {
+            // Get checked filter values from UI
+            const checked = Array.from(document.querySelectorAll('#method-filters input:checked'))
+                .map(input => input.value.toLowerCase());
 
-    const noFilter = ['==', 'fly', -1];  // Always false to hide all
+            const noFilter = ['==', 'fly', -1];  // Always false to hide all
 
-    let filter;
+            let filter;
 
-    // Special case: "Fly Only" selected
-    if (checked.includes('fly_only')) {
-        filter = ['all',
-            ['==', ['get', 'fly'], 1],
-            ['==', ['get', 'spin'], 0],
-            ['==', ['get', 'bait'], 0]
-        ];
-    } else {
-        // General case
-        const validMethods = ['fly', 'spin', 'bait', 'closed'];
-        const selectedFilters = checked
-            .filter(method => validMethods.includes(method))
-            .map(method => ['==', ['get', method], 1]);
+            // Special case: "Fly Only" selected
+            if (checked.includes('fly_only')) {
+                filter = ['all',
+                    ['==', ['get', 'fly'], 1],
+                    ['==', ['get', 'spin'], 0],
+                    ['==', ['get', 'bait'], 0]
+                ];
+            } else {
+                // General case
+                const validMethods = ['fly', 'spin', 'bait', 'closed'];
+                const selectedFilters = checked
+                    .filter(method => validMethods.includes(method))
+                    .map(method => ['==', ['get', method], 1]);
 
-        filter = selectedFilters.length > 0 ? ['any', ...selectedFilters] : noFilter;
-    }
+                filter = selectedFilters.length > 0 ? ['any', ...selectedFilters] : noFilter;
+            }
 
-    // Apply the filter to both layers
-    if (map.getLayer('AW Rivers-line')) {
-        map.setFilter('AW Rivers-line', filter);
-    }
+            // Apply the filter to both layers
+            if (map.getLayer('AW Rivers-line')) {
+                map.setFilter('AW Rivers-line', filter);
+            }
 
-    if (map.getLayer('AW Rivers-fill')) {
-        map.setFilter('AW Rivers-fill', filter);
-    }
-}
+            if (map.getLayer('AW Rivers-fill')) {
+                map.setFilter('AW Rivers-fill', filter);
+            }
+        }
 
 
 
@@ -1015,121 +1063,6 @@ function updateRiverFilter() {
                 document.removeEventListener('touchend', stopDrag);
             }
         })();
-
-
-
-        //const hydroButton = document.createElement('button');
-        //hydroButton.textContent = 'Load Local Hydro Parcels';
-        //hydroButton.className = 'hydro-button'; // use CSS class
-        //hydroButton.style.display = 'none'; // still hide initially
-
-        // Add the button to the map container
-        map.getContainer().appendChild(hydroButton);
-
-        map.on('moveend', () => {
-            const zoom = map.getZoom();
-            hydroButton.style.display = zoom >= 15 ? 'block' : 'none';
-        });
-
-        hydroButton.addEventListener('click', () => {
-            const center = map.getCenter();
-            const lat = center.lat;
-            const lng = center.lng;
-
-            // URLs for hydro parcels, road parcels, and DOC areas
-            const hydroUrl = `https://data.linz.govt.nz/services/query/v1/vector.json?key=70df4e2427df4763855d3db1c55bc2ce&layer=50771&x=${lng}&y=${lat}&max_results=100&radius=500&geometry=true&with_field_names=true`;
-            const roadUrl = `https://data.linz.govt.nz/services/query/v1/vector.json?key=70df4e2427df4763855d3db1c55bc2ce&layer=50796&x=${lng}&y=${lat}&max_results=100&radius=500&geometry=true&with_field_names=true`;
-            const privateUrl = `https://data.linz.govt.nz/services/query/v1/vector.json?key=70df4e2427df4763855d3db1c55bc2ce&layer=50804&x=${lng}&y=${lat}&max_results=100&radius=500&geometry=true&with_field_names=true`;
-
-            // Fetch all three layers in parallel
-            Promise.all([fetch(hydroUrl), fetch(roadUrl), fetch(privateUrl)])
-                .then(responses => Promise.all(responses.map(r => r.json())))
-                .then(([hydroData, roadData, privateData]) => {
-                    const hydroFeatures = hydroData.vectorQuery?.layers?.['50771']?.features || [];
-                    const roadFeatures = roadData.vectorQuery?.layers?.['50796']?.features || [];
-                    const privateFeatures = privateData.vectorQuery?.layers?.['50804']?.features || [];
-
-                    if (hydroFeatures.length === 0) console.log("No hydro parcel data found.");
-                    if (roadFeatures.length === 0) console.log("No road parcel data found.");
-                    if (privateFeatures.length === 0) console.log("No private area data found.");
-
-                    const hydroGeoJSON = {
-                        type: "FeatureCollection",
-                        features: hydroFeatures.map(f => ({
-                            type: "Feature",
-                            geometry: f.geometry,
-                            properties: f.properties
-                        }))
-                    };
-
-                    const roadGeoJSON = {
-                        type: "FeatureCollection",
-                        features: roadFeatures.map(f => ({
-                            type: "Feature",
-                            geometry: f.geometry,
-                            properties: f.properties
-                        }))
-                    };
-
-                    const privateGeoJSON = {
-                        type: "FeatureCollection",
-                        features: privateFeatures.map(f => ({
-                            type: "Feature",
-                            geometry: f.geometry,
-                            properties: f.properties
-                        }))
-                    };
-
-                    // Hydro layer
-                    if (map.getSource('hydro')) {
-                        map.getSource('hydro').setData(hydroGeoJSON);
-                    } else {
-                        map.addSource('hydro', { type: 'geojson', data: hydroGeoJSON });
-                        map.addLayer({
-                            id: 'hydro-layer',
-                            type: 'fill',
-                            source: 'hydro',
-                            paint: {
-                                'fill-color': 'pink',
-                                'fill-opacity': 0.4
-                            }
-                        });
-                    }
-
-                    // Road layer
-                    if (map.getSource('road')) {
-                        map.getSource('road').setData(roadGeoJSON);
-                    } else {
-                        map.addSource('road', { type: 'geojson', data: roadGeoJSON });
-                        map.addLayer({
-                            id: 'road-layer',
-                            type: 'fill',
-                            source: 'road',
-                            paint: {
-                                'fill-color': 'pink',
-                                'fill-opacity': 0.4
-                            }
-                        });
-                    }
-
-                    // private layer
-                    if (map.getSource('private')) {
-                        map.getSource('private').setData(privateGeoJSON);
-                    } else {
-                        map.addSource('private', { type: 'geojson', data: privateGeoJSON });
-                        map.addLayer({
-                            id: 'private-layer',
-                            type: 'fill',
-                            source: 'private',
-                            paint: {
-                                'fill-color': 'red',
-                                'fill-opacity': 0.4
-                            }
-                        });
-                    }
-                })
-                .catch(error => console.error("Error fetching spatial data:", error));
-        });
 
 
 
