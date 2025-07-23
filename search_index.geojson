@@ -1,0 +1,3435 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Awakino River",
+        "Section": "downstream of Mahoenui Bridge",
+        "RegionCode": 2,
+        "id": 20001,
+        "feature_num": 20001,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Awakino",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The upper reaches of the Awakino River hold some of the best fly fishing waters in the North Island.  Indeed the whole river has a lot to offer anglers with many kilometres of good water and easy access.\r\n\r\nThe headwaters flow through one of the more rugged parts of the King Country. Here trout numbers are generally low, though the fish are often large and the scenery spectacular.  A DoC track runs parallel to the river with several good camp sites and a well-maintained hut at Leitches Clearing.  The track is reached from the end of Gribbon Road through the Spellman property (it is recommended that you contact Mr Spellman for access).\r\n\r\nFurther downstream, there is classic fly fishing water alongside Gribbon Road with a delightful sequence of pools and wadeable runs.  The water is generally very clear, and the trout are wary as these reaches are much more heavily fished than the rest of the river.  Upstream from Mahoenui Village the Awakino is restricted to fly-fishing only.\r\n\r\nNear Mahoenui the river goes into a series of large loops away from the road.  Each of these loops provides a good day’s fishing, generally across private land so permission from the landowner is required.  Good water can also be reached from Papakauri Road and downstream through the Awakino Gorge alongside State Highway 3.\r\n\r\nTwo streams flowing into the Awakino also contain fishable water.  The Manganui Stream is generally fished in the middle reaches where it flows across farmland.  The Mangaorongo Stream is heavily overgrown though there is some open water in the headwaters.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7399,
+          -38.6283
+        ]
+      },
+      "id": 20001
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Awakino River",
+        "Section": "upstream of Mahoenui Bridge",
+        "RegionCode": 2,
+        "id": 20002,
+        "feature_num": 20002,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Awakino",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The upper reaches of the Awakino River hold some of the best fly fishing waters in the North Island.  Indeed the whole river has a lot to offer anglers with many kilometres of good water and easy access.\r\n\r\nThe headwaters flow through one of the more rugged parts of the King Country. Here trout numbers are generally low, though the fish are often large and the scenery spectacular.  A DoC track runs parallel to the river with several good camp sites and a well-maintained hut at Leitches Clearing.  The track is reached from the end of Gribbon Road through the Spellman property (it is recommended that you contact Mr Spellman for access).\r\n\r\nFurther downstream, there is classic fly fishing water alongside Gribbon Road with a delightful sequence of pools and wadeable runs.  The water is generally very clear, and the trout are wary as these reaches are much more heavily fished than the rest of the river.  Upstream from Mahoenui Village the Awakino is restricted to fly-fishing only.\r\n\r\nNear Mahoenui the river goes into a series of large loops away from the road.  Each of these loops provides a good day’s fishing, generally across private land so permission from the landowner is required.  Good water can also be reached from Papakauri Road and downstream through the Awakino Gorge alongside State Highway 3.\r\n\r\nTwo streams flowing into the Awakino also contain fishable water.  The Manganui Stream is generally fished in the middle reaches where it flows across farmland.  The Mangaorongo Stream is heavily overgrown though there is some open water in the headwaters.",
+        "fly": 1,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 1,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8141,
+          -38.5014
+        ]
+      },
+      "id": 20002
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Awaroa River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20003,
+        "feature_num": 20003,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Awaroa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "A small river flowing into Kawhia Harbour that holds a sparse population of brown trout. Fishes best in the middle reaches where the river flows through a scenic reserve.  Access from Mahoe Road.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9423,
+          -38.1614
+        ]
+      },
+      "id": 20003
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Hikutaia River",
+        "Section": "downstream of Wires Road Ford",
+        "RegionCode": 2,
+        "id": 20004,
+        "feature_num": 20004,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Hikutaia",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6773,
+          -37.2926
+        ]
+      },
+      "id": 20004
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Hikutaia River",
+        "Section": "upstream of Wires Road Ford",
+        "RegionCode": 2,
+        "id": 20005,
+        "feature_num": 20005,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Hikutaia",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.732,
+          -37.292
+        ]
+      },
+      "id": 20005
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Hydro Lake Tributaries",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20006,
+        "feature_num": 20006,
+        "water_type": "River and Streams\r\n",
+        "name_regs": "Hydro Lake Tributaries",
+        "open_season": "CLOSED",
+        "methods": "CLOSED",
+        "limit_trout": "CLOSED",
+        "daily_bag_limit_other": "CLOSED",
+        "notes": "Notes 1",
+        "Description": {},
+        "fly": 0,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 1,
+        "open_date_unix": 1,
+        "close_date_unix": 86400,
+        "additional_requirements": "Note 1.1 The following waterways are designated as closed waters: \r\nNo angler shall take (or attempt to take) sports fish from all rivers, streams and their tributaries which flow into, but not including, Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam. \r\nNote 1.2 The closed waters restrictions in clause 1.1 for this region do not apply to the waters specified in clause 3 for this region or to flooded backwaters of Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam.  upstream of the Karapiro Dam.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.647,
+          -38.1034
+        ]
+      },
+      "id": 20006
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kaimarama River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20007,
+        "feature_num": 20007,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kaimarama",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6092,
+          -36.8873
+        ]
+      },
+      "id": 20007
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kakahu Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20008,
+        "feature_num": 20008,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kakahu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 1,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.9055,
+          -37.957
+        ]
+      },
+      "id": 20008
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kaniwhaniwha Stream",
+        "Section": "downstream of Smith Road",
+        "RegionCode": 2,
+        "id": 20009,
+        "feature_num": 20009,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kaniwhaniwha",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1376,
+          -37.8608
+        ]
+      },
+      "id": 20009
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kaniwhaniwha Stream",
+        "Section": "upstream of Smith Road",
+        "RegionCode": 2,
+        "id": 20010,
+        "feature_num": 20010,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kaniwhaniwha",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 1,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0921,
+          -37.9236
+        ]
+      },
+      "id": 20010
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kapowai River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20011,
+        "feature_num": 20011,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kapowai",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7303,
+          -36.9651
+        ]
+      },
+      "id": 20011
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Karapiro Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20012,
+        "feature_num": 20012,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Karapiro Stream",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5523,
+          -37.8781
+        ]
+      },
+      "id": 20012
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Kauaeranga River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20013,
+        "feature_num": 20013,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Kauaeranga",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6312,
+          -37.1049
+        ]
+      },
+      "id": 20013
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Komata River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20014,
+        "feature_num": 20014,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Komata",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7017,
+          -37.348
+        ]
+      },
+      "id": 20014
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Arapuni",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20015,
+        "feature_num": 20015,
+        "water_type": "Lake",
+        "name_regs": "Arapuni",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Rudd no limit",
+        "notes": "Notes 1, 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 1.1 The following waterways are designated as closed waters: \r\nNo angler shall take (or attempt to take) sports fish from all rivers, streams and their tributaries which flow into, but not including, Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam. \r\nNote 1.2 The closed waters restrictions in clause 1.1 for this region do not apply to the waters specified in clause 3 for this region or to flooded backwaters of Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam.  upstream of the Karapiro Dam.; Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6493,
+          -38.1527
+        ]
+      },
+      "id": 20015
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Karapiro",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20016,
+        "feature_num": 20016,
+        "water_type": "Lake",
+        "name_regs": "Karapiro",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "2",
+        "daily_bag_limit_other": "Rudd no limit",
+        "notes": "Notes 1, 3, 5, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 1.1 The following waterways are designated as closed waters: \r\nNo angler shall take (or attempt to take) sports fish from all rivers, streams and their tributaries which flow into, but not including, Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam. \r\nNote 1.2 The closed waters restrictions in clause 1.1 for this region do not apply to the waters specified in clause 3 for this region or to flooded backwaters of Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam.  upstream of the Karapiro Dam.; Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 5. No angler shall fish for sports fish from any vessel in the upper reaches of Lake Karapiro (upstream from the white marker post, situated 200m below the Huihuitaha Stream mouth) unless the vessel is securely anchored.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6142,
+          -37.9651
+        ]
+      },
+      "id": 20016
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Moananui",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20017,
+        "feature_num": 20017,
+        "water_type": "Lake",
+        "name_regs": "Moana-nui",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8528,
+          -38.2367
+        ]
+      },
+      "id": 20017
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Pupuke",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20018,
+        "feature_num": 20018,
+        "water_type": "Lake",
+        "name_regs": "Pupuke",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": {},
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.766,
+          -36.7803
+        ]
+      },
+      "id": 20018
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Waipapa",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20019,
+        "feature_num": 20019,
+        "water_type": "Lake",
+        "name_regs": "Waipapa",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Rudd no limit",
+        "notes": "Notes 1, 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 1.1 The following waterways are designated as closed waters: \r\nNo angler shall take (or attempt to take) sports fish from all rivers, streams and their tributaries which flow into, but not including, Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam. \r\nNote 1.2 The closed waters restrictions in clause 1.1 for this region do not apply to the waters specified in clause 3 for this region or to flooded backwaters of Lake Arapuni, Lake Waipapa and Lake Karapiro, and that part of the Waikato River downstream of the Maraetai Dam to upstream of the Karapiro Dam.  upstream of the Karapiro Dam.; Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6961,
+          -38.3092
+        ]
+      },
+      "id": 20019
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Lake Whatihua",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20020,
+        "feature_num": 20020,
+        "water_type": "Lake",
+        "name_regs": "Whatihua (Thomsons)",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6703,
+          -37.2753
+        ]
+      },
+      "id": 20020
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Little Waipa Stream",
+        "Section": "(Horahora Road Bridge deemed to be the mouth)",
+        "RegionCode": 2,
+        "id": 20021,
+        "feature_num": 20021,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Little Waipa Stream",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7141,
+          -38.1159
+        ]
+      },
+      "id": 20021
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mahakirau River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20022,
+        "feature_num": 20022,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mahakirau",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.601,
+          -36.8573
+        ]
+      },
+      "id": 20022
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangakahu Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20023,
+        "feature_num": 20023,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangakahu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3868,
+          -38.7415
+        ]
+      },
+      "id": 20023
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangaohae Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20024,
+        "feature_num": 20024,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangaohae",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The upper reaches of the Mangaohae stream, alongside Were and Ngapaenga roads, provide excellent waters for the beginner angler or anglers with slight mobility difficulties. These waters often hold surprisingly high numbers of rainbow trout as the Mangaohae meanders across open farmland with a succession of pools and runs.  Further upstream the Pomarangi Stream enters on the true left and although a small stream it does hold some large fish.  Access to the middle and upper reaches of the Pomarangi can be gained from Pomarangi Road\r\n\r\nAt the end of Were Road, a signposted DoC track follows the Mangaohae Stream down to its confluence with the Tawarau River.  The track then runs parallel to the Tawarau River before finishing at Speedies Road.  These waters flow past spectacular limestone bluffs and native forest providing some of the most impressive scenery to be found in the Waitomo District.  Rainbow trout are present in reasonable numbers and limestone formations provide a variety of interesting pools and runs.  Camping sites are available along the track and this is an excellent area for a weekend away.\r\n\r\nWere Road is reached by taking Oparure Road, 3km north of Te Kuiti on SH3, and then Ngapaenga Road.  A marginal strip provides public access to virtually all of the Mangaohae Stream except where the stream loops away from the Mangaohae Road.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8595,
+          -38.3594
+        ]
+      },
+      "id": 20024
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangaokewa Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20025,
+        "feature_num": 20025,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangaokewa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2725,
+          -38.3921
+        ]
+      },
+      "id": 20025
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangaorongo Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20026,
+        "feature_num": 20026,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangaorongo",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8576,
+          -38.4975
+        ]
+      },
+      "id": 20026
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangaotaki River",
+        "Section": "downstream of lower bridge on Mangaotaki Road",
+        "RegionCode": 2,
+        "id": 20027,
+        "feature_num": 20027,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangaotaki",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The Mangaotaki River contains an extensive length of fishing water especially in the middle reaches where there is ideal water for the novice fly-fisherman.\r\n\r\nDownstream from State Highway 3 the Mangaotaki flows through a steep gorge to the Mokau River.  Although the water is often discoloured, there are usually good numbers of fish and this water is ideal for spin fishing.  Above State Highway 3, there are a series of long deep pools leading up to a series of small waterfalls, and again these reaches provide good spin fishing water. \r\n\r\nAccess to the middle and upper reaches can be gained from Mangaotaki Road, via State Highway 3 at Piopio Village.  Most angling occurs in the middle reaches where the Mangaotaki alternates between rugged gorges and long reaches across open farmland.  Water clarity is not quite adequate to spot fish but there is generally no shortage of rainbows 0.5-1.5 kg.  As you first approach the river from Piopio, there is a long section where the river flows through a scenic reserve providing public access for about 2.5 km.  Otherwise the river flows across private land so please ask for access from the landowners.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9227,
+          -38.5051
+        ]
+      },
+      "id": 20027
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangaotaki River",
+        "Section": "upstream of lower bridge on Mangaotaki Road",
+        "RegionCode": 2,
+        "id": 20028,
+        "feature_num": 20028,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangaotaki",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The Mangaotaki River contains an extensive length of fishing water especially in the middle reaches where there is ideal water for the novice fly-fisherman.\r\n\r\nDownstream from State Highway 3 the Mangaotaki flows through a steep gorge to the Mokau River.  Although the water is often discoloured, there are usually good numbers of fish and this water is ideal for spin fishing.  Above State Highway 3, there are a series of long deep pools leading up to a series of small waterfalls, and again these reaches provide good spin fishing water. \r\n\r\nAccess to the middle and upper reaches can be gained from Mangaotaki Road, via State Highway 3 at Piopio Village.  Most angling occurs in the middle reaches where the Mangaotaki alternates between rugged gorges and long reaches across open farmland.  Water clarity is not quite adequate to spot fish but there is generally no shortage of rainbows 0.5-1.5 kg.  As you first approach the river from Piopio, there is a long section where the river flows through a scenic reserve providing public access for about 2.5 km.  Otherwise the river flows across private land so please ask for access from the landowners.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8743,
+          -38.4197
+        ]
+      },
+      "id": 20028
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatangi Reservoir",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20029,
+        "feature_num": 20029,
+        "water_type": "Lake",
+        "name_regs": "Mangatangi Reservoir",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2089,
+          -37.1046
+        ]
+      },
+      "id": 20029
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatawhiri River",
+        "Section": "downstream of State Highway 2 Bridge",
+        "RegionCode": 2,
+        "id": 20030,
+        "feature_num": 20030,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangatawhiri",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "No bait restrictions",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Tench 5, all others no limit",
+        "notes": "Notes 2, 4, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 4.1. The following waters are designated as coarse fishing waters: - Mangatawhiri River from the bridge on State Highway 2 to its confluence with the Waikato River - Whangamarino River - All lakes and ponds, excluding any lake specified in clause 3 for this region.\r\nNote 4.2. There are no restrictions on the numbers of rods and running lines that an angler fishing for Perch, Tench or Rudd may have, provided only one of which shall be used for fishing at any one time. \r\nNote 4.3. A coarse fishing pole may be used to fish for Perch, Tench and Rudd. \r\nNote 4.4. It is an offence to kill on any day more than five Tench. There is no limit for Perch or Rudd. \r\nNote 4.5. There is no minimum length for Perch, Tench or Rudd.\r\n\r\n; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0576,
+          -37.2477
+        ]
+      },
+      "id": 20030
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatawhiri River",
+        "Section": "upstream of State Highway 2 Bridge",
+        "RegionCode": 2,
+        "id": 20031,
+        "feature_num": 20031,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangatawhiri",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1473,
+          -37.1606
+        ]
+      },
+      "id": 20031
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatepopo Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20032,
+        "feature_num": 20032,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangatepopo",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5548,
+          -39.0751
+        ]
+      },
+      "id": 20032
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatutu Stream",
+        "Section": "downstream of Lethbridge Road",
+        "RegionCode": 2,
+        "id": 20033,
+        "feature_num": 20033,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangatutu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4061,
+          -38.1187
+        ]
+      },
+      "id": 20033
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangatutu Stream",
+        "Section": "upstream of Lethbridge Road",
+        "RegionCode": 2,
+        "id": 20034,
+        "feature_num": 20034,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangatutu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 1,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4699,
+          -38.25
+        ]
+      },
+      "id": 20034
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangawhero Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20035,
+        "feature_num": 20035,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mangawhero",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2461,
+          -38.2439
+        ]
+      },
+      "id": 20035
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangawhio Stream",
+        "Section": "above lower falls",
+        "RegionCode": 2,
+        "id": 20036,
+        "feature_num": 20036,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Mangawhio Stream",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6256,
+          -38.2817
+        ]
+      },
+      "id": 20036
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mangawhio Stream",
+        "Section": "below lower falls",
+        "RegionCode": 2,
+        "id": 20037,
+        "feature_num": 20037,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Mangawhio Stream",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6794,
+          -38.2749
+        ]
+      },
+      "id": 20037
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Maramataha River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20038,
+        "feature_num": 20038,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Maramataha",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4588,
+          -38.6612
+        ]
+      },
+      "id": 20038
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Maratoto Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20039,
+        "feature_num": 20039,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Maratoto",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7628,
+          -37.3103
+        ]
+      },
+      "id": 20039
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Marokopa River",
+        "Section": "downstream of Mangatuahaua Stream confluence",
+        "RegionCode": 2,
+        "id": 20040,
+        "feature_num": 20040,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Marokopa",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": "The impressive Marokopa Falls divides the river into two fisheries.  Below the falls, the best fishing is upstream from Te Anga where there is a succession of deep pools and runs over a wide shingle bed.  Further upstream, in the short section of river below the Marokopa Falls, the river changes in character with small bouldery pools and pocket water and these waters usually hold good numbers of fish.  Public access is provided from Speedies Road.  A small tributary, the Puaroa Stream provides some small stream fishing across open farmland, landowners permission is required.\r\n\r\nAbove the Marokopa Falls there is at least 10 km of river with long deep pools and wide wadeable runs.  The section running parallel to the Waitomo Caves Road is best suited for spin fishing though there is the occasional reach offering good fly fishing water.  Further upstream there is a solid day’s fishing up through farmland and into native forest.  A small tributary, the Mangapohue Stream, also provides some fishing in its lower reaches.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7924,
+          -38.2757
+        ]
+      },
+      "id": 20040
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Marokopa River",
+        "Section": "upstream of Mangatuahaua Stream confluence",
+        "RegionCode": 2,
+        "id": 20041,
+        "feature_num": 20041,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Marokopa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "The impressive Marokopa Falls divides the river into two fisheries.  Below the falls, the best fishing is upstream from Te Anga where there is a succession of deep pools and runs over a wide shingle bed.  Further upstream, in the short section of river below the Marokopa Falls, the river changes in character with small bouldery pools and pocket water and these waters usually hold good numbers of fish.  Public access is provided from Speedies Road.  A small tributary, the Puaroa Stream provides some small stream fishing across open farmland, landowners permission is required.\r\n\r\nAbove the Marokopa Falls there is at least 10 km of river with long deep pools and wide wadeable runs.  The section running parallel to the Waitomo Caves Road is best suited for spin fishing though there is the occasional reach offering good fly fishing water.  Further upstream there is a solid day’s fishing up through farmland and into native forest.  A small tributary, the Mangapohue Stream, also provides some fishing in its lower reaches.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9415,
+          -38.253
+        ]
+      },
+      "id": 20041
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Moakurarua Stream",
+        "Section": "downstream of Honikiwi Road",
+        "RegionCode": 2,
+        "id": 20042,
+        "feature_num": 20042,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Moakurarua",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1414,
+          -38.0987
+        ]
+      },
+      "id": 20042
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Moakurarua Stream",
+        "Section": "upstream of Honikiwi Road",
+        "RegionCode": 2,
+        "id": 20043,
+        "feature_num": 20043,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Moakurarua",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0612,
+          -38.2074
+        ]
+      },
+      "id": 20043
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Mokau River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20044,
+        "feature_num": 20044,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Mokau",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "Holds a reasonable trout population in the reach alongside State Highway 3, but this is not an attractive river to fish as the water is usually discoloured and there are numerous snags and weed beds.  A small tributary, the Mangapehi Stream, also contains fish with access from State Highway 4.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9856,
+          -38.5629
+        ]
+      },
+      "id": 20044
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ngakoaohia Stream",
+        "Section": "downstream of Pirongia/Kawhia Bridge",
+        "RegionCode": 2,
+        "id": 20045,
+        "feature_num": 20045,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ngakoaohia",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1811,
+          -38.0442
+        ]
+      },
+      "id": 20045
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ngakoaohia Stream",
+        "Section": "upstream of Pirongia/Kawhia Bridge",
+        "RegionCode": 2,
+        "id": 20046,
+        "feature_num": 20046,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ngakoaohia",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 0,
+        "bait": 0,
+        "fly_only": 1,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.11,
+          -38.0533
+        ]
+      },
+      "id": 20046
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ngutunui Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20047,
+        "feature_num": 20047,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ngutunui",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.088,
+          -38.0791
+        ]
+      },
+      "id": 20047
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ohinemuri River",
+        "Section": "downstream of Victoria Street Bridge, Waihi",
+        "RegionCode": 2,
+        "id": 20048,
+        "feature_num": 20048,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ohinemuri",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7276,
+          -37.4013
+        ]
+      },
+      "id": 20048
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ohinemuri River",
+        "Section": "upstream of Victoria Street Bridge, Waihi",
+        "RegionCode": 2,
+        "id": 20049,
+        "feature_num": 20049,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ohinemuri",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8678,
+          -37.3748
+        ]
+      },
+      "id": 20049
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Okauaka Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20050,
+        "feature_num": 20050,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Okauaka",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5082,
+          -38.612
+        ]
+      },
+      "id": 20050
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Okupata Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20051,
+        "feature_num": 20051,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Okupata",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9858,
+          -38.0526
+        ]
+      },
+      "id": 20051
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Omahine Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20052,
+        "feature_num": 20052,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Omahine",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8995,
+          -37.8644
+        ]
+      },
+      "id": 20052
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ongarue River",
+        "Section": "downstream of Waimiha Stream confluence",
+        "RegionCode": 2,
+        "id": 20053,
+        "feature_num": 20053,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ongarue",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2691,
+          -38.7439
+        ]
+      },
+      "id": 20053
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Ongarue River",
+        "Section": "upstream of Waimiha Stream confluence",
+        "RegionCode": 2,
+        "id": 20054,
+        "feature_num": 20054,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Ongarue",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4839,
+          -38.5913
+        ]
+      },
+      "id": 20054
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Oparau River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20055,
+        "feature_num": 20055,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Oparau",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "An attractive small river that meanders across open farmland with an extensive length of fishable water that is especially suitable for anglers that have slight mobility difficulties.  Unfortunately, trout numbers are low with a scattering of rainbows and the occassional large sea-run brown. \r\n\r\nThe Oparau flows into Kawhia Harbour and the river runs alongside Pirongia-west and Moerangi roads.  The headwaters flow through a DoC Reserve but access to the middle reaches is across private farmland.  The Okupata Stream also holds trout with access across private farmland alongside State Highway 31 (farmhouse at junction of SH 3 and Kawhia Harbour Road).",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9904,
+          -38.0189
+        ]
+      },
+      "id": 20055
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Oraka Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20056,
+        "feature_num": 20056,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Oraka",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "A large spring-fed stream with several stretches providing good fishing with easy access. Access to the lower reaches is generally difficult but there is some reasonable fishing water near Tirau with access from Okoroire Road of downstream from Taumangi Road. There is no public access so make sure you ask the landowner.\r\n\r\nIn the headwaters there is good public access with an esplanade reserve starting 1km downstream from Putaruru and extending upstream for about 10 kilometres. At Putaruru a public walkway follows the river ans this is a popular reach for local anglers. Between Putaruru and Domain Road, the esplanade reserve is restricted to the true left bank (looking downstream). Above Domain Road, the reserve continues upstream on both banks for at least 5 kilometres.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8552,
+          -38.0523
+        ]
+      },
+      "id": 20056
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Owairaka Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20057,
+        "feature_num": 20057,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Owairaka",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5099,
+          -38.1004
+        ]
+      },
+      "id": 20057
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Parkinsons Lake",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20058,
+        "feature_num": 20058,
+        "water_type": "Lake",
+        "name_regs": "Parkinsons",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6848,
+          -37.3148
+        ]
+      },
+      "id": 20058
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Piopiotea Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20059,
+        "feature_num": 20059,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Piopiotea",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4011,
+          -39.1228
+        ]
+      },
+      "id": 20059
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Pokaiwhenua Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20060,
+        "feature_num": 20060,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Pokaiwhenua Stream",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8284,
+          -38.1411
+        ]
+      },
+      "id": 20060
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Pungapunga River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20061,
+        "feature_num": 20061,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Pungapunga",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4564,
+          -38.8579
+        ]
+      },
+      "id": 20061
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Puniu River",
+        "Section": "downstream of Seafund Road Bridge",
+        "RegionCode": 2,
+        "id": 20062,
+        "feature_num": 20062,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Puniu",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3613,
+          -38.0704
+        ]
+      },
+      "id": 20062
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Puniu River",
+        "Section": "upstream of Seafund Road Bridge",
+        "RegionCode": 2,
+        "id": 20063,
+        "feature_num": 20063,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Puniu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5116,
+          -38.2484
+        ]
+      },
+      "id": 20063
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Purere Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20064,
+        "feature_num": 20064,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Purere (upper Waihou)",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "No limit",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8373,
+          -38.0153
+        ]
+      },
+      "id": 20064
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Rapurapu Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20065,
+        "feature_num": 20065,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Rapurapu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.9077,
+          -37.8948
+        ]
+      },
+      "id": 20065
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Tairua River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20066,
+        "feature_num": 20066,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Tairua",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7578,
+          -37.1511
+        ]
+      },
+      "id": 20066
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Tapu River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20067,
+        "feature_num": 20067,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Tapu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5385,
+          -36.9885
+        ]
+      },
+      "id": 20067
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Taringamotu River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20068,
+        "feature_num": 20068,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Taringamotu",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3843,
+          -38.8224
+        ]
+      },
+      "id": 20068
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Tawarau River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20069,
+        "feature_num": 20069,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Tawarau",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "Access to the lower reaches of the Tawarau River can be gained from Speedies Road upstream from the confluence with the Marokopa River.  If you are an energetic angler who does not mind scrambling over boulders then this is a delightful river.  Although the water is generally slightly discoloured, fish are usually plentiful both rainbows and browns.  Above Speedies Road there is a short section where the river flows across open farmland.\r\n\r\nFurther upstream the Tawarau flows as a series of cascades under a large rock fall.  This section can be bypassed on foot using the DoC track to Weirs Road.  The section above the rock fall is described elsewhere in this pamphlet.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9203,
+          -38.3028
+        ]
+      },
+      "id": 20069
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Tomarata Lake",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20070,
+        "feature_num": 20070,
+        "water_type": "Lake",
+        "name_regs": "Tomarata",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Tench 5, all others no limit",
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6501,
+          -36.1937
+        ]
+      },
+      "id": 20070
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Tumai Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20071,
+        "feature_num": 20071,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Tumai Stream",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7305,
+          -38.283
+        ]
+      },
+      "id": 20071
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Upper Mangatawhiri Reservoir",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20072,
+        "feature_num": 20072,
+        "water_type": "Lake",
+        "name_regs": "Mangatawhiri Reservoir",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1553,
+          -37.0774
+        ]
+      },
+      "id": 20072
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waihou River",
+        "Section": "above Okoroire Falls",
+        "RegionCode": 2,
+        "id": 20073,
+        "feature_num": 20073,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waihou",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "No Limit",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "One of the country’s best spring-fed rivers providing classic trout fishing in very clear water. Typically, rainbow trout are very abundant with about 1000 fish per kilometre and although most fish are small, there is still a good population of large trout.\r\n\r\nBetween Okoroire and State Highway 5 there is no public access to the river and permission should be obtained from local landowners on Somervilles Road or SH5. Upstream from SH5, the river is wadeable over cobblestone bed, and the stretch of water between here and Whites Road gives a good days fishing. A “fishing reserve” provides public access on both sides of the river, except for the first kilometre above SH 5 where the reserve is restricted to the true left bank (left bank looking downstream).\r\n\r\nPublic Access continues upstream from Whites Road where a walkway runs alongside the river. In this section, the Waihou meanders across open farmland with short, deep pools and long cobblestones runs offering a variety of attractive fishing water. About 4 kilometres above Whites Road, the river enters a series of large springs that provide challenging but usually frustrating fishing on big wary rainbows. Above the springs, the Waihou rapidly diminishes in size to a small stream offering limited fishing opportunities. Access to the walkway can be gained from either Whites Road or Leslie Road.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.864,
+          -38.0321
+        ]
+      },
+      "id": 20073
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waihou River",
+        "Section": "below Okoroire Falls",
+        "RegionCode": 2,
+        "id": 20074,
+        "feature_num": 20074,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waihou",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "One of the country’s best spring-fed rivers providing classic trout fishing in very clear water. Typically, rainbow trout are very abundant with about 1000 fish per kilometre and although most fish are small, there is still a good population of large trout.\r\n\r\nBetween Okoroire and State Highway 5 there is no public access to the river and permission should be obtained from local landowners on Somervilles Road or SH5. Upstream from SH5, the river is wadeable over cobblestone bed, and the stretch of water between here and Whites Road gives a good days fishing. A “fishing reserve” provides public access on both sides of the river, except for the first kilometre above SH 5 where the reserve is restricted to the true left bank (left bank looking downstream).\r\n\r\nPublic Access continues upstream from Whites Road where a walkway runs alongside the river. In this section, the Waihou meanders across open farmland with short, deep pools and long cobblestones runs offering a variety of attractive fishing water. About 4 kilometres above Whites Road, the river enters a series of large springs that provide challenging but usually frustrating fishing on big wary rainbows. Above the springs, the Waihou rapidly diminishes in size to a small stream offering limited fishing opportunities. Access to the walkway can be gained from either Whites Road or Leslie Road.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6757,
+          -37.4772
+        ]
+      },
+      "id": 20074
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waikato River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20075,
+        "feature_num": 20075,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waikato",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Tench 5, all others no limit",
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9605,
+          -37.4333
+        ]
+      },
+      "id": 20075
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waimakariri Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20076,
+        "feature_num": 20076,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waimakariri",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "No limit",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "A popular river, highly valued by local anglers, with an abundant trout population and good public access in the upper reaches.\r\n\r\nThe lower reaches can be reached from Tauranga Road. Downstream from Tauranga Road there is no public access and permission should be obtained from landowners on Tauranga Road or Old Te Aroha Road. This section is not heavily fished but holds an attractive sequence of pools and runs over a predominately cobblestone bed. Upstream from Tauranga Road, there is no formal access but much of the river has been fenced and planted.\r\n\r\nFurther upstream the river flows across open farmland and there is some good water above Rapurapu Road where an esplanade reserve extends for about one kilometre.\r\n\r\nFrom Waiomou Road, a fishing reserve provides public access to both sides of the river for about 3 kilometres downstream and 5 kilometres upstream. Here the river is narrow and typically fast flowing, but fish numbers are high and this is attractive water. Good water can also be reached by crossing farmland on the Te Poi-Tapapa road—landowners permission must be obtained.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.882,
+          -38.0255
+        ]
+      },
+      "id": 20076
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waimiha Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20077,
+        "feature_num": 20077,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waimiha",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.472,
+          -38.5371
+        ]
+      },
+      "id": 20077
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waiomou Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20078,
+        "feature_num": 20078,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waiomou",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": "A popular river, highly valued by local anglers, with an abundant trout population and good public access in the upper reaches.\r\n\r\nThe lower reaches can be reached from Tauranga Road. Downstream from Tauranga Road there is no public access and permission should be obtained from landowners on Tauranga Road or Old Te Aroha Road. This section is not heavily fished but holds an attractive sequence of pools and runs over a predominately cobblestone bed. Upstream from Tauranga Road, there is no formal access but much of the river has been fenced and planted.\r\n\r\nFurther upstream the river flows across open farmland and there is some good water above Rapurapu Road where an esplanade reserve extends for about one kilometre.\r\n\r\nFrom Waiomou Road, a fishing reserve provides public access to both sides of the river for about 3 kilometres downstream and 5 kilometres upstream. Here the river is narrow and typically fast flowing, but fish numbers are high and this is attractive water. Good water can also be reached by crossing farmland on the Te Poi-Tapapa road—landowners permission must be obtained.",
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8899,
+          -37.9382
+        ]
+      },
+      "id": 20078
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waione Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20079,
+        "feature_num": 20079,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waione",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "0",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4352,
+          -38.6869
+        ]
+      },
+      "id": 20079
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipa River",
+        "Section": "between State Highway 3 Bridge and Toa Bridge",
+        "RegionCode": 2,
+        "id": 20080,
+        "feature_num": 20080,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waipa",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2896,
+          -38.2258
+        ]
+      },
+      "id": 20080
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipa River",
+        "Section": "downstream of State Highway 3 Bridge at Otorohanga",
+        "RegionCode": 2,
+        "id": 20081,
+        "feature_num": 20081,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waipa",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1699,
+          -37.9203
+        ]
+      },
+      "id": 20081
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipa River",
+        "Section": "upstream of Toa Bridge",
+        "RegionCode": 2,
+        "id": 20082,
+        "feature_num": 20082,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waipa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4046,
+          -38.4013
+        ]
+      },
+      "id": 20082
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipapa River",
+        "Section": "above lower falls",
+        "RegionCode": 2,
+        "id": 20083,
+        "feature_num": 20083,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Waipapa River",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6259,
+          -38.3899
+        ]
+      },
+      "id": 20083
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipapa River",
+        "Section": "below lower falls",
+        "RegionCode": 2,
+        "id": 20084,
+        "feature_num": 20084,
+        "water_type": "Hydro Lake Tributaries",
+        "name_regs": "Waipapa River",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6765,
+          -38.3037
+        ]
+      },
+      "id": 20084
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipare Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20085,
+        "feature_num": 20085,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waipare (upper Waihou)",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "No limit",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.9286,
+          -38.0349
+        ]
+      },
+      "id": 20085
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waipari River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20086,
+        "feature_num": 20086,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waipari",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5478,
+          -38.2248
+        ]
+      },
+      "id": 20086
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Wairoa River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20087,
+        "feature_num": 20087,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Wairoa",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0745,
+          -37.0363
+        ]
+      },
+      "id": 20087
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waitawheta River",
+        "Section": "downstream of end of Franklin Road",
+        "RegionCode": 2,
+        "id": 20088,
+        "feature_num": 20088,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waitawheta",
+        "open_season": "All year",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7533,
+          -37.4423
+        ]
+      },
+      "id": 20088
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waitawheta River",
+        "Section": "upstream of end of Franklin Road",
+        "RegionCode": 2,
+        "id": 20089,
+        "feature_num": 20089,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waitawheta",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7926,
+          -37.502
+        ]
+      },
+      "id": 20089
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waitekauri River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20090,
+        "feature_num": 20090,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waitekauri",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7845,
+          -37.3761
+        ]
+      },
+      "id": 20090
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Waiwawa River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20091,
+        "feature_num": 20091,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Waiwawa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6572,
+          -36.9674
+        ]
+      },
+      "id": 20091
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whakapapa River",
+        "Section": "downstream of Piopiotea Stream confluence",
+        "RegionCode": 2,
+        "id": 20092,
+        "feature_num": 20092,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whakapapa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3969,
+          -38.997
+        ]
+      },
+      "id": 20092
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whakapapa River",
+        "Section": "upstream of Piopiotea Stream confluence",
+        "RegionCode": 2,
+        "id": 20093,
+        "feature_num": 20093,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whakapapa",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2 brown 0 rainbow",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4371,
+          -39.0987
+        ]
+      },
+      "id": 20093
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whakapapaiti Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20094,
+        "feature_num": 20094,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whakapapa-iti",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2 brown 0 rainbow",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4883,
+          -39.1943
+        ]
+      },
+      "id": 20094
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whakapapanui Stream",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20095,
+        "feature_num": 20095,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whakapapa-nui",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2 brown 0 rainbow",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5226,
+          -39.1769
+        ]
+      },
+      "id": 20095
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whangamarino River",
+        "Section": {},
+        "RegionCode": 2,
+        "id": 20096,
+        "feature_num": 20096,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whangamarino",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "No bait restrictions",
+        "limit_trout": "5",
+        "daily_bag_limit_other": "Tench 5, all others no limit",
+        "notes": "Notes 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1496,
+          -37.3312
+        ]
+      },
+      "id": 20096
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whanganui River",
+        "Section": "downstream of Whakapapa River confluence",
+        "RegionCode": 2,
+        "id": 20097,
+        "feature_num": 20097,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whanganui",
+        "open_season": "All year",
+        "methods": "Fly, Spin, Bait",
+        "limit_trout": "5",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 3, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 1,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1759276799,
+        "additional_requirements": "Note 3.1. No angler, when fishing in bait fishing waters, shall use as bait any fish taken from any water other than where the fishing is occurring.\r\nNote 3.2. In addition to baits listed in the first schedule coloured dough and corn are legal in bait fishing waters.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2158,
+          -38.9439
+        ]
+      },
+      "id": 20097
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Water": "Whanganui River",
+        "Section": "upstream of Whakapapa River confluence",
+        "RegionCode": 2,
+        "id": 20098,
+        "feature_num": 20098,
+        "water_type": "Rivers and Streams",
+        "name_regs": "Whanganui",
+        "open_season": "1 Oct - 30 Jun",
+        "methods": "Fly, Spin",
+        "limit_trout": "2",
+        "daily_bag_limit_other": {},
+        "notes": "Notes 2, 7",
+        "Description": {},
+        "fly": 1,
+        "spin": 1,
+        "bait": 0,
+        "fly_only": 0,
+        "permanently_closed": 0,
+        "open_date_unix": 1727740800,
+        "close_date_unix": 1751327999,
+        "additional_requirements": "Note 2. Scented artificial lures may be used in all waters other than fly fishing only waters, when actively fished to imitate a bait fish.; Note 7.1. There are no length restrictions in the Waimakariri Stream and Waihou River upstream from Okoroire and their tributaries, except that no angler shall take more than 2 Trout exceeding 300mm in length. \r\nNote 7.2. In all other waters the minimum length is 300mm.",
+        "Region": "Auckland/Waikato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5295,
+          -39.0066
+        ]
+      },
+      "id": 20098
+    }
+  ]
+}

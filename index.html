@@ -9,7 +9,6 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
 
 
-
     <style>
         body {
             margin: 0;
@@ -34,6 +33,27 @@
             overflow: hidden;
             white-space: normal;
             transition: opacity 0.3s ease;
+        }
+
+
+        .map-overlay-inner {
+            position: fixed;
+            top: 80px;
+            left: 10px;
+            width: 25vw;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            overflow-y: auto;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+            z-index: 9999;
+            box-sizing: border-box;
+            transition: height 0.2s ease;
+            touch-action: none;
         }
 
         #zoom-level {
@@ -63,25 +83,6 @@
             /* add other styles like text-transform, letter-spacing, etc. */
         }
 
-        .map-overlay-inner {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            width: 25vw;
-            height: 96vh;
-            font-family: Arial, sans-serif;
-            font-size: 15px;
-            line-height: 1.5;
-            overflow-y: auto;
-            padding: 15px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
-            z-index: 9999;
-            box-sizing: border-box;
-            transition: height 0.2s ease;
-            touch-action: none;
-        }
 
         .card-list {
             list-style-type: none;
@@ -89,23 +90,6 @@
             margin: 0;
         }
 
-        /* Responsive override for mobile screens */
-        @media (max-width: 768px) {
-            .map-overlay-inner {
-                top: auto;
-                /* unset top */
-                bottom: 0;
-                /* align to bottom */
-                left: 0;
-                overflow-y: auto;
-                width: 100vw;
-                /* full screen width */
-                height: 30vh;
-                /* bottom half */
-                border-radius: 8px 8px 0 0;
-                /* rounded top corners */
-            }
-        }
 
         .subtitle-main {
             font-size: 1.3em;
@@ -113,6 +97,22 @@
             color: #333;
             margin-top: 4px;
         }
+
+
+
+        .directions-inline-image {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            opacity: 0.85;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .directions-inline-image:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
 
         .subtitle-region {
             font-size: 1.em;
@@ -164,15 +164,6 @@
             transform: translateY(1px);
         }
 
-        .map-overlay-drag-handle {
-            width: 60px;
-            height: 6px;
-            background: #ccc;
-            border-radius: 3px;
-            margin: 8px auto;
-            touch-action: none;
-            cursor: grab;
-        }
 
         #menu {
             position: absolute;
@@ -182,6 +173,7 @@
             z-index: 1;
             top: 10px;
             right: 150px;
+            z-index: 1000;
             border-radius: 4px;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
@@ -197,6 +189,111 @@
             cursor: pointer;
             z-index: 10000;
         }
+
+        #search-container {
+            position: relative;
+            width: 300px;
+            /* adjust as needed */
+        }
+
+        #top-bar {
+            position: relative;
+            /* so child absolute elements position to it */
+            height: 70px;
+            background-color: rgba(7, 7, 7, 0.85);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 10;
+        }
+
+        #top-bar .logo {
+            height: 70px;
+            z-index: 11;
+        }
+
+
+        #top-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #search-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20vw;
+            min-width: 200px;
+            z-index: 11;
+        }
+
+        #search-container input[type="text"] {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 14px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #e7e2e2;
+            outline: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #search-container input[type="text"]:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+
+        #suggestions {
+            position: absolute;
+            top: 100%;
+            /* Directly below the input */
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 0 0 20px 20px;
+            /* smooth rounded bottom corners */
+            overflow: hidden;
+            max-height: 300px;
+            overflow-y: auto;
+            display: none;
+            z-index: 11;
+            /* higher than map and top-bar */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border: none;
+            /* match borderless input */
+            font-family: Arial, sans-serif;
+        }
+
+        .suggestion {
+            padding: 6px;
+            font-family: Arial, sans-serif;
+            font-weight: 100;
+            cursor: pointer;
+        }
+
+        .suggestion:hover {
+            background: #eee;
+        }
+
+        .section {
+
+            font-size: 80%;
+        }
+
+        .region {
+            font-style: italic;
+            font-size: 75%;
+            color: #888;
+
+        }
+
+
+        .mapboxgl-ctrl-top-right {
+            top: 70px;
+            /* Adjust this to match your top bar's height */
+        }
     </style>
 </head>
 
@@ -211,14 +308,23 @@
     <div id="map"></div>
     <!-- The rest of your content -->
 
+    <div id="top-bar">
+        <img class="logo" src="White LS.png" alt="Logo">
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search water..." autocomplete="off" />
+            <div id="suggestions"></div>
+        </div>
+    </div>
+
     <div id="menu">
-        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
-        <label for="satellite-streets-v12">Satellite</label>
+        <input id="Satellite" type="radio" name="rtoggle" value="Satellite">
+        <label for="Satellite">LINZ Satellite</label>
 
         <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" checked="checked">
         <label for="outdoors-v12">Outdoors</label>
 
-
+        <input id="Topo" type="radio" name="rtoggle" value="Topo">
+        <label for="Topo">LINZ Topo50</label>
     </div>
 
     <button onclick="toggleFilters()" id="filter-toggle-btn"
@@ -236,7 +342,7 @@
             <label><input type="checkbox" value="fly" checked> Fly</label><br>
             <label><input type="checkbox" value="spin" checked> Spin</label><br>
             <label><input type="checkbox" value="bait" checked> Bait</label><br>
-            <label><input type="checkbox" value="closed" checked> Closed</label>
+            <label><input type="checkbox" value="permanently_closed" checked> Permanently closed</label>
         </div>
 
         <div id="point-type-filter">
@@ -261,7 +367,7 @@
             </label><br>
             <label>
                 <input type="checkbox" value="Hatchery" checked>
-                <img src="images/Hatchery-Marker-Dot.png" alt="Hatchery"
+                <img src="images/Hatchery-Marker-Dot.png" alt="Hatchery Release"
                     style=" height:16px; vertical-align:middle; margin-right:4px;">
                 Hatchery
             </label><br>
@@ -283,6 +389,14 @@
                     style=" height:16px; vertical-align:middle; margin-right:4px;">
                 Boat Ramp
             </label>
+            </label><br>
+            <label>
+                <input type="checkbox" value="Jigging" checked>
+                <img src="images/Jigging-Marker-Dot.png" alt="Jigging Spot"
+                    style=" height:16px; vertical-align:middle; margin-right:4px;">
+                Jigging Spot
+            </label>
+
         </div>
 
         <div style="margin-top: 10px;">
@@ -303,14 +417,15 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhdWNoaWxkIiwiYSI6ImNtYWxuZTh4cTBhbm4yam9wb2N6OTZmc2YifQ._fwiw77G_XhZonhV5d3CJA';
 
+
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/outdoors-v12',
-            center: [173.1, -41.4],
+            center: [174.050903, -40.655639],
             minZoom: 5,
-            zoom: 5
+            zoom: 5.2
         });
-        map.addControl(new mapboxgl.FullscreenControl());
+
         map.addControl(new mapboxgl.NavigationControl({
             showCompass: false
         }));
@@ -325,54 +440,60 @@
         map.dragRotate.disable();
 
 
-        map.addControl(
-            new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                mapboxgl: mapboxgl,
-                countries: 'nz',
-                marker: false, // disable markers
-                zoom: 12,
-            }), 'top-left'
-
-        );
-
-
         // disable map rotation using touch rotation gesture
         map.touchZoomRotate.disableRotation();
 
         const card = document.getElementById('properties');
+
         const showCard = (feature) => {
             const props = feature.properties;
             const displayFields = {
                 methods: 'Method',
                 open_season: 'Open',
-                lim_trout: 'Trout Limit',
+                limit_trout: 'Trout Limit',
                 Description: "Description",
                 additional_requirements: "Additional Requirements",
             };
 
             let content = `
-    <div class="map-overlay-inner">
-        <div class="map-overlay-drag-handle"></div>
-        <button class="close-button" onclick="document.getElementById('properties').style.display='none'">×</button>
-        <code class="card-title">${props.Water || props.name || props.Title || 'No Title'}</code>
-    `;
+<div class="map-overlay-inner">
+    <div class="map-overlay-drag-handle"></div>
+    <button class="close-button" onclick="document.getElementById('properties').style.display='none'">×</button>
+    <code class="card-title">${props.Water || props.name || props.Title || 'No Title'}</code>
+`;
 
-            // Subtitle
-            if (props.subtitle || props.Section) {
-                content += `<div class="card-subtitle subtitle-main">${props.subtitle || props.Section}</div>`;
+            // Subtitle + directions image (inline)
+            if (props.subtitle || (typeof props.Section === 'string' && props.Section.trim() !== '')) {
+                const subtitleText = props.subtitle || props.Section;
+                content += `<div class="card-subtitle subtitle-main">`;
+
+                // Add subtitle text
+                content += `${subtitleText}`;
+
+                // If it's a point, add the directions icon inline
+                if (
+                    feature.geometry &&
+                    feature.geometry.type === 'Point' &&
+                    Array.isArray(feature.geometry.coordinates)
+                ) {
+                    const [lng, lat] = feature.geometry.coordinates;
+                    const googleMapsLink = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+                    content += `
+            <a href="${googleMapsLink}" target="_blank" title="Get Directions">
+                <img src="images/directions.png" alt="Get Directions" class="directions-inline-image">
+            </a>
+        `;
+                }
+
+                content += `</div>`;
             }
 
-            // Region
+
             if (props.Region) {
                 content += `<div class="card-subtitle subtitle-region">${props.Region} Fish & Game Region</div>`;
             }
 
-            content += `
-    <hr>
-    <ul class="card-list">
-`;
-
+            content += `<hr><ul class="card-list">`;
 
             for (const [key, label] of Object.entries(displayFields)) {
                 if (props[key] !== undefined) {
@@ -389,7 +510,7 @@
         let selectedPoint = null;
         let selectedRiver = null;
         let hoveredAccessPointId = null;
-        let hoveredRiverId = null;
+
         let toggleIndex = 0; // 0 or 1, to switch between point and line
         // Before adding the layer, load and add your icon image:
 
@@ -402,7 +523,10 @@
             { name: 'DesignatedWater-icon', url: 'images/DesignatedWater.png' },
             { name: 'Trolling-icon', url: 'images/Trolling-Marker-Dot-1.png' },
             { name: 'BoatRamp-icon', url: 'images/Boat-Launch-Marker-Dot.png' },
+            { name: 'Jigging-icon', url: 'images/Jigging-Marker-Dot.png' },
         ];
+
+
 
         // Function to load images
         function loadCustomImages(map, callback) {
@@ -438,11 +562,15 @@
         });
 
         // Style reload (after style change)
-        map.on('style.load', () => {
+        map.on('styledata', () => {
+            console.log('Style loaded');
+
             loadCustomImages(map, () => {
+                console.log('Custom images loaded');
                 addCustomDataAndLayers();
             });
         });
+
         function updateLayerFilter() {
             const checkboxes = document.querySelectorAll('#point-type-filter input[type="checkbox"]');
             const selectedTypes = Array.from(checkboxes)
@@ -452,6 +580,56 @@
             const filter = ['in', ['get', 'point_type'], ['literal', selectedTypes]];
             map.setFilter('data-points-all', filter);
         }
+
+
+
+        const clearSelection = () => {
+            if (selectedRiver) {
+                map.setFeatureState({
+                    source: 'AW Rivers',
+                    sourceLayer: 'waterways',
+                    id: selectedRiver.id
+                }, { selected: false });
+                selectedRiver = null;
+            }
+
+            // Clear search UI
+            const input = document.getElementById('search');
+            const suggestions = document.getElementById('suggestions');
+            input.value = '';
+            suggestions.innerHTML = '';
+            suggestions.style.display = 'none';
+
+            // Clear card
+            const card = document.getElementById('properties');
+            card.innerHTML = '';
+            card.style.display = 'none';
+        };
+
+
+
+        const selectFeature = (feature) => {
+            clearSelection();  // Clear previous selections
+
+            if (feature.layer.id === 'data-points-all') {
+                selectedPoint = feature;
+                map.setFeatureState({ source: 'data-points', id: feature.id }, { selected: true });
+            } else if (feature.layer.id === 'AW Rivers-line' || feature.layer.id === 'AW Rivers-fill') {
+                selectedRiver = feature;
+                map.setFeatureState({ source: 'AW Rivers', sourceLayer: 'waterways', id: feature.id }, { selected: true });
+            }
+
+            showCard(feature);
+        };
+
+        let allFeatures = [];
+        let lastSelectedId = null;
+
+        fetch('search_index.geojson')
+            .then(res => res.json())
+            .then(data => {
+                allFeatures = data.features;
+            });
 
         const zoomLevel = document.getElementById('zoom-level');
 
@@ -477,53 +655,147 @@
                 }
             }
 
+            if (!map.getSource('PublicAccessAreas')) {
+                map.addSource('PublicAccessAreas', {
+                    type: 'vector',
+                    url: 'mapbox://beauchild.PublicAccessAreas', // If using Mapbox
+                    generateId: true
+                });
+            }
 
-            map.addSource('PublicAccessAreas', {
+            if (!map.getLayer('PublicAccessAreas')) {
+                map.addLayer({
+                    id: 'PublicAccessAreas-fill',
+                    type: 'fill',
+                    source: 'PublicAccessAreas',
+                    minzoom: 13,
+                    'source-layer': 'mylayer',
+                    paint: {
+                        'fill-color': [
+                            'match',
+                            ['get', 'DataType'],
+                            'DOC Conservation Area', '#2d6c3e',        // blue
+                            'Esplanade Reserve', '#66f0cb',            // green
+                            'Esplanade Strip', '#ff66dc',              // pink
+                            'Hydro Parcel', '#abecff',                  // red
+                            'Non-Primary Parcel', '#ff7f00',            // orange
+                            'Public Access Easement', '#ffd8f1',        // purple
+                            'Reserve Land', '#a9cb66',                   // light green
+                            'Road Parcel', '#cca3e1',                     // light blue
+                            'Walkway Easement', '#ffb2b2',                 // yellow
+                            /* default color if none match */
+                            '#cccccc'
+                        ],
+                        'fill-opacity': [
+                            'match',
+                            ['get', 'DataType'],
+                            'DOC Conservation Area', .5,        // blue
+                            'Esplanade Reserve', .5,            // green
+                            'Esplanade Strip', .5,              // pink
+                            'Hydro Parcel', .5,                  // red
+                            'Non-Primary Parcel', .1,            // orange
+                            'Public Access Easement', .5,        // purple
+                            'Reserve Land', .5,                   // light green
+                            'Road Parcel', .5,                     // light blue
+                            'Walkway Easement', .5,                 // yellow
+                            /* default color if none match */
+                            .5
+                        ],
+                    }
+                }, firstSymbolId);
+            }
+
+            map.addSource('AW Rivers', {
                 type: 'vector',
-                url: 'mapbox://beauchild.PublicAccessAreas' // If using Mapbox
+                url: 'mapbox://beauchild.all_waters',
             });
 
+            const todayUnix = (Date.now() / 1000 / 86400) * 86400;
+
             map.addLayer({
-                id: 'PublicAccessAreas-fill',
-                type: 'fill',
-                source: 'PublicAccessAreas',
-                minzoom: 13,
-                'source-layer': 'mylayer',
+                id: 'AW Rivers-line',
+                type: 'line',
+                minzoom: 7,
+                source: 'AW Rivers',
+                'source-layer': 'waterways',
+                layout: {
+                    'line-join': 'round',
+                    'line-cap': 'round',
+                },
                 paint: {
-                    'fill-color': [
-                        'match',
-                        ['get', 'DataType'],
-                        'DOC Conservation Area', '#2d6c3e',        // blue
-                        'Esplanade Reserve', '#66f0cb',            // green
-                        'Esplanade Strip', '#ff66dc',              // pink
-                        'Hydro Parcel', '#abecff',                  // red
-                        'Non-Primary Parcel', '#ff7f00',            // orange
-                        'Public Access Easement', '#ffd8f1',        // purple
-                        'Reserve Land', '#a9cb66',                   // light green
-                        'Road Parcel', '#cca3e1',                     // light blue
-                        'Walkway Easement', '#ffb2b2',                 // yellow
-                        /* default color if none match */
-                        '#cccccc'
+                    // LINE COLOR
+                    'line-color': [
+                        'case',
+                     
+                        // ❌ Seasonally closed (today outside open/close date)
+                        [
+                            'any',
+                            ['<', todayUnix, ['get', 'open_date_unix']],
+                            ['>', todayUnix, ['get', 'close_date_unix']]
+                        ],
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#ac261f',
+                            ['boolean', ['feature-state', 'highlight'], false], '#f42f58',
+                            '#ec7983'
+                        ],
+
+                        // ✅ OPEN
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#3949ab',  // darker blue
+                            ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6',
+                            '#79bcec'
+                        ]
                     ],
-                    'fill-opacity': [
-                        'match',
-                        ['get', 'DataType'],
-                        'DOC Conservation Area', .5,        // blue
-                        'Esplanade Reserve', .5,            // green
-                        'Esplanade Strip', .5,              // pink
-                        'Hydro Parcel', .5,                  // red
-                        'Non-Primary Parcel', .1,            // orange
-                        'Public Access Easement', .5,        // purple
-                        'Reserve Land', .5,                   // light green
-                        'Road Parcel', .5,                     // light blue
-                        'Walkway Easement', .5,                 // yellow
-                        /* default color if none match */
-                        .5
+
+                    // LINE WIDTH
+                    'line-width': [
+                        'case',
+                        ['boolean', ['feature-state', 'selected'], false], 10,
+                        ['boolean', ['feature-state', 'highlight'], false], 8,
+                        4
                     ],
+
+                    'line-opacity': 1,
+                    'line-border-color': '#ffffff', // white border         
                 }
             }, firstSymbolId);
 
+            map.addLayer({
+                id: 'AW Rivers-fill',
+                type: 'fill',
+                minzoom: 7,
+                source: 'AW Rivers',
+                'source-layer': 'waterways',
+                paint: {
+                    'fill-color': [
+                        'case',
 
+                        // Seasonally closed (today outside open-close range)
+                        [
+                            'any',
+                            ['<', todayUnix, ['get', 'open_date_unix']],
+                            ['>', todayUnix, ['get', 'close_date_unix']]
+                        ],
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#f42f58 ',
+                            ['boolean', ['feature-state', 'highlight'], false], '#f42f58 ',
+                            '#ec7983'
+                        ],
+
+                        // Otherwise open
+                        [
+                            'case',
+                            ['boolean', ['feature-state', 'selected'], false], '#4ca6e6',  // darker blue fill
+                            ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6', // lighter blue fill
+                            '#79bcec'  // default open fill
+                        ]
+                    ],
+                    'fill-opacity': 1
+                }
+            }, firstSymbolId);
 
             map.addSource('FG Regions', {
                 type: 'geojson',
@@ -536,11 +808,11 @@
                 source: 'FG Regions',
                 layout: {
                     'line-join': 'round',
-                    'line-cap': 'round',
-                    visability: 'none'
+                    'line-cap': 'round'
+
                 },
                 paint: {
-                    'line-color': 'grey',
+                    'line-color': '#4A6741',
                     'line-width': 4,
                     'line-opacity': 0.6
                 }
@@ -560,11 +832,10 @@
                 maxzoom: 7,
                 layout: {
                     'text-field': ['get', 'NAME'],       // use the NAME property
-                    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                    'text-font': ['Open Sans Bold'],
                     'text-size': 11,
                     'text-anchor': 'center',
                     'text-allow-overlap': true,
-                    visability: 'none'       // prevents overlapping labels
                 },
                 paint: {
                     'text-color': '#000000',
@@ -572,77 +843,6 @@
                     'text-halo-width': 1.5
                 }
             });
-
-
-            map.addSource('AW Rivers', {
-                type: 'geojson',
-                data: 'AWRivers12June.geojson',
-                generateId: true
-            });
-
-
-
-            map.addLayer({
-                id: 'AW Rivers-line',
-                type: 'line',
-                source: 'AW Rivers',
-                minzoom: 7,
-                layout: {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-                paint: {
-                    'line-color': [
-                        'case',
-                        ['==', ['get', 'methods'], 'CLOSED'],
-                        [
-                            'case',
-                            ['boolean', ['feature-state', 'selected'], false], '#d73027', // dark red
-                            ['boolean', ['feature-state', 'highlight'], false], '#fc8d59', // light red
-                            '#fc8d59' // pale red/orange
-                        ],
-                        // else (methods ≠ "CLOSED")
-                        [
-                            'case',
-                            ['boolean', ['feature-state', 'selected'], false], '#7983ec',
-                            ['boolean', ['feature-state', 'highlight'], false], '#4ca6e6',
-                            '#79bcec'
-                        ]
-                    ],
-
-                    'line-width': [
-                        'case',
-                        ['boolean', ['feature-state', 'selected'], false], 10,
-                        ['boolean', ['feature-state', 'highlight'], false], 9,
-                        4
-                    ],
-
-                    'line-opacity': 1
-                }
-            }, firstSymbolId);
-
-
-
-            map.addLayer({
-                id: 'AW Rivers-fill',
-                type: 'fill',
-                source: 'AW Rivers',
-                paint: {
-                    'fill-color': [
-                        'case',
-                        ['boolean', ['feature-state', 'selected'], false],
-                        '#7983ec',
-                        ['boolean', ['feature-state', 'highlight'], false],
-                        '#4ca6e6',
-                        '#79bcec'
-                    ],
-                    'fill-opacity': 1
-                }
-            }, firstSymbolId);
-
-
-
-            // Add the source
 
             map.addSource('Routes', {
                 type: 'geojson',
@@ -676,7 +876,7 @@
                 id: 'data-points-all',
                 type: 'symbol',
                 source: 'data-points',
-                minzoom: 9.5,
+                minzoom: 10.5,
                 layout: {
                     'icon-image': ['concat', ['get', 'point_type'], '-icon'],
                     'icon-size': 0.14,
@@ -687,227 +887,257 @@
 
 
 
-            // Create a popup div (not a Mapbox popup) and add to the map container
-            const popup = document.createElement('div');
-            popup.style.position = 'absolute';
-            popup.style.pointerEvents = 'none';  // allow mouse events to pass through
-            popup.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';  // semi-transparent black
-            popup.style.color = '#fff';
-            popup.style.fontFamily = 'Arial, sans-serif';
-            popup.style.padding = '4px 8px';
-            popup.style.borderRadius = '4px';
-            popup.style.fontSize = '12px';
-            popup.style.display = 'none';  // hidden initially
-            document.body.appendChild(popup);
-
-            map.on('mousemove', 'PublicAccessAreas-fill', (e) => {
-                if (e.features.length > 0) {
-                    const feature = e.features[0];
-                    const dataType = feature.properties.DataType;
-
-                    popup.style.display = 'block';
-                    popup.textContent = dataType || 'No DataType';
-
-                    popup.style.left = e.originalEvent.pageX + 10 + 'px';
-                    popup.style.top = e.originalEvent.pageY + 10 + 'px';
-                }
+            map.addSource('search', {
+                type: 'geojson',
+                data: 'search_index.geojson',
             });
 
-            map.on('mouseleave', 'PublicAccessAreas-fill', () => {
-                popup.style.display = 'none';
-            });
-
-
-
-
-
-
-
-
-            let selectedFeatureId = null;
-            let hoverFeatureId = null;
-
-            function updateIconSize() {
-                // Access Points
-                map.setLayoutProperty('data-points-all', 'icon-size', [
-                    'case',
-                    ['all', ['==', ['id'], hoverFeatureId], ['!=', ['id'], selectedFeatureId]], 0.15,
-                    ['==', ['id'], selectedFeatureId], 0.18,
-                    0.14
-                ]);
-
-            }
-
-            // Hover start — only update if not the selected feature
-            map.on('mouseenter', 'data-points-all', e => {
-                map.getCanvas().style.cursor = 'pointer';
-
-                const hoveredId = e.features[0].id;
-                // Only apply hover if not currently selected
-                if (hoveredId !== selectedFeatureId) {
-                    hoverFeatureId = hoveredId;
-                    updateIconSize();
+            map.addLayer({
+                id: 'search-points-all',
+                type: 'circle',
+                source: 'search',
+                paint: {
+                    'circle-radius': 5,
+                    'circle-color': '#FF5733',
+                    'circle-opacity': 0.0
                 }
             });
-
-            // Hover end — clear hover unless it's also selected
-            map.on('mouseleave', 'data-points-all', () => {
-                map.getCanvas().style.cursor = '';
-                hoverFeatureId = null;
-                updateIconSize();
-            });
-
-
-            // Click on an access point — select it
-            map.on('click', 'data-points-all', e => {
-                selectedFeatureId = e.features[0].id;
-                hoverFeatureId = null; // Clear hover on selection
-                updateIconSize();
-            });
-
-            map.on('click', (e) => {
-                const features = map.queryRenderedFeatures(e.point, {
-                    layers: ['data-points-all', 'AW Rivers-line', 'AW Rivers-fill']
-                });
-
-                // Deselect previous selection
-                if (selectedPoint) {
-                    map.setFeatureState({ source: 'data-points', id: selectedPoint.id }, { selected: false });
-                    selectedPoint = null;
-                }
-                if (selectedRiver) {
-                    map.setFeatureState({ source: 'AW Rivers', id: selectedRiver.id }, { selected: false });
-                    selectedRiver = null;
-                }
-
-
-                if (features.length === 0) {
-                    card.style.display = 'none';
-                    return;
-                }
-
-                // Prioritize selecting points over lines
-                const pointFeature = features.find(f => f.layer.id === 'data-points-all');
-                const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line')
-                    || features.find(f => f.layer.id === 'AW Rivers-fill');
-
-                if (pointFeature) {
-                    selectedPoint = pointFeature;
-                    map.setFeatureState({ source: 'data-points', id: pointFeature.id }, { selected: true });
-                    showCard(pointFeature);
-                } else if (riverFeature) {
-                    selectedRiver = riverFeature;
-                    map.setFeatureState({ source: 'AW Rivers', id: riverFeature.id }, { selected: true });
-                    showCard(riverFeature);
-                }
-
-            });
-
-            map.on('click', e => {
-                const features = map.queryRenderedFeatures(e.point, {
-                    layers: ['data-points-all']
-                });
-
-                if (features.length === 0 && selectedFeatureId !== null) {
-                    selectedFeatureId = null;
-                    updateIconSize();
-                }
-            });
-
-
-            let isHovering = {
-                points: false,
-                rivers: false,
-            };
-
-            function updateCursor() {
-                if (isHovering.points || isHovering.rivers) {
-                    map.getCanvas().style.cursor = 'pointer';
-                } else {
-                    map.getCanvas().style.cursor = '';
-                }
-            }
-
-
-            map.on('mouseenter', 'data-points-all', (e) => {
-                isHovering.points = true;
-                updateCursor();
-
-                const feature = e.features[0];
-                if (hoveredAccessPointId !== null && hoveredAccessPointId !== feature.id) {
-                    map.setFeatureState({ source: 'data-points', id: hoveredAccessPointId }, { highlight: false });
-                }
-                hoveredAccessPointId = feature.id;
-                map.setFeatureState({ source: 'data-points-all', id: feature.id }, { highlight: true });
-            });
-
-            map.on('mouseleave', 'data-points-all', () => {
-                isHovering.points = false;
-                updateCursor();
-
-                if (hoveredAccessPointId !== null) {
-                    map.setFeatureState({ source: 'data-points', id: hoveredAccessPointId }, { highlight: false });
-                    hoveredAccessPointId = null;
-                }
-            });
-
-
-            let hoveredRiverId = null;
-            let hoveringLayers = new Set();
-
-            function updateHighlightState(id) {
-                // If not hovering any layer, clear highlight
-                if (!hoveringLayers.has('line') && !hoveringLayers.has('fill')) {
-                    if (hoveredRiverId !== null) {
-                        map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
-                        hoveredRiverId = null;
-                    }
-                }
-            }
-
-
-            // FILL hover
-            map.on('mouseenter', 'AW Rivers-line', (e) => {
-                isHovering.rivers = true;
-                updateCursor();
-
-                const feature = e.features[0];
-                if (hoveredRiverId !== null && hoveredRiverId !== feature.id) {
-                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
-                }
-                hoveredRiverId = feature.id;
-                map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: true });
-            });
-
-            map.on('mouseleave', 'AW Rivers-line', () => {
-                isHovering.rivers = false;
-                updateCursor();
-                updateHighlightState(hoveredRiverId);
-            });
-
-
-            // FILL hover
-            map.on('mouseenter', 'AW Rivers-fill', (e) => {
-                isHovering.rivers = true;
-                updateCursor();
-
-                const feature = e.features[0];
-                if (hoveredRiverId !== null && hoveredRiverId !== feature.id) {
-                    map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: false });
-                }
-                hoveredRiverId = feature.id;
-                map.setFeatureState({ source: 'AW Rivers', id: hoveredRiverId }, { highlight: true });
-            });
-
-            map.on('mouseleave', 'AW Rivers-fill', () => {
-                isHovering.rivers = false;
-                updateCursor();
-                updateHighlightState(hoveredRiverId);
-            });
-
 
 
         }
+
+        // Create a popup div (not a Mapbox popup) and add to the map container
+        const popup = document.createElement('div');
+        popup.style.position = 'absolute';
+        popup.style.pointerEvents = 'none';  // allow mouse events to pass through
+        popup.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';  // semi-transparent black
+        popup.style.color = '#fff';
+        popup.style.fontFamily = 'Arial, sans-serif';
+        popup.style.padding = '4px 8px';
+        popup.style.borderRadius = '4px';
+        popup.style.fontSize = '12px';
+        popup.style.display = 'none';  // hidden initially
+        document.body.appendChild(popup);
+
+        map.on('mousemove', 'PublicAccessAreas-fill', (e) => {
+            if (e.features.length > 0) {
+                const feature = e.features[0];
+                const dataType = feature.properties.DataType;
+
+                popup.style.display = 'block';
+                popup.textContent = dataType || 'No DataType';
+
+                popup.style.left = e.originalEvent.pageX + 10 + 'px';
+                popup.style.top = e.originalEvent.pageY + 10 + 'px';
+            }
+        });
+
+        map.on('mouseleave', 'PublicAccessAreas-fill', () => {
+            popup.style.display = 'none';
+        });
+
+
+
+
+        let selectedFeatureId = null;
+        let hoverFeatureId = null;
+
+        function updateIconSize() {
+            // Access Points
+            map.setLayoutProperty('data-points-all', 'icon-size', [
+                'case',
+                ['all', ['==', ['id'], hoverFeatureId], ['!=', ['id'], selectedFeatureId]], 0.15,
+                ['==', ['id'], selectedFeatureId], 0.18,
+                0.14
+            ]);
+
+        }
+
+
+        // Click on an access point — select it
+        map.on('click', 'data-points-all', e => {
+            selectedFeatureId = e.features[0].id;
+            hoverFeatureId = null; // Clear hover on selection
+            updateIconSize();
+        });
+
+
+
+
+        map.on('click', (e) => {
+            const features = map.queryRenderedFeatures(e.point, {
+                layers: ['data-points-all', 'AW Rivers-line', 'AW Rivers-fill']
+            });
+
+            if (features.length === 0) {
+                // Clear any selected features
+                clearSelection();
+
+                // Hide the info card
+                card.style.display = 'none';
+                return;
+            }
+
+            // Prioritize points
+            const pointFeature = features.find(f => f.layer.id === 'data-points-all');
+            const riverFeature = features.find(f => f.layer.id === 'AW Rivers-line') || features.find(f => f.layer.id === 'AW Rivers-fill');
+
+            if (pointFeature) {
+                selectFeature(pointFeature);
+            } else if (riverFeature) {
+                selectFeature(riverFeature);
+            }
+        });
+
+
+
+
+        map.on('click', e => {
+            const features = map.queryRenderedFeatures(e.point, {
+                layers: ['data-points-all']
+            });
+
+            if (features.length === 0 && selectedFeatureId !== null) {
+                selectedFeatureId = null;
+                updateIconSize();
+            }
+        });
+
+
+        // Hover start — only update if not the selected feature
+        map.on('mouseenter', 'data-points-all', e => {
+            map.getCanvas().style.cursor = 'pointer';
+
+            const hoveredId = e.features[0].id;
+            // Only apply hover if not currently selected
+            if (hoveredId !== selectedFeatureId) {
+                hoverFeatureId = hoveredId;
+                updateIconSize();
+            }
+        });
+
+        // Hover end — clear hover unless it's also selected
+        map.on('mouseleave', 'data-points-all', () => {
+            map.getCanvas().style.cursor = '';
+            hoverFeatureId = null;
+            updateIconSize();
+        });
+
+
+        let isHovering = {
+            points: false,
+            rivers: false,
+        };
+
+        function updateCursor() {
+            if (isHovering.points || isHovering.rivers) {
+                map.getCanvas().style.cursor = 'pointer';
+            } else {
+                map.getCanvas().style.cursor = '';
+            }
+        }
+
+
+        map.on('mouseenter', 'data-points-all', (e) => {
+            isHovering.points = true;
+            updateCursor();
+
+            const feature = e.features[0];
+            if (hoveredAccessPointId !== null && hoveredAccessPointId !== feature.id) {
+                map.setFeatureState({ source: 'data-points', id: hoveredAccessPointId }, { highlight: false });
+            }
+            hoveredAccessPointId = feature.id;
+            map.setFeatureState({ source: 'data-points-all', id: feature.id }, { highlight: true });
+        });
+
+        map.on('mouseleave', 'data-points-all', () => {
+            isHovering.points = false;
+            updateCursor();
+
+            if (hoveredAccessPointId !== null) {
+                map.setFeatureState({ source: 'data-points', id: hoveredAccessPointId }, { highlight: false });
+                hoveredAccessPointId = null;
+            }
+        });
+
+
+        let hoveredRiverId = null;
+        let hoveringLayers = new Set();
+
+        function updateHighlightState(id) {
+            // Only clear highlight if NOT hovering either line or fill
+            if (!hoveringLayers.has('line') && !hoveringLayers.has('fill')) {
+                if (hoveredRiverId !== null) {
+                    map.setFeatureState(
+                        { source: 'AW Rivers', sourceLayer: 'waterways', id: hoveredRiverId },
+                        { highlight: false }
+                    );
+                    hoveredRiverId = null;
+                }
+            }
+        }
+
+        // MOUSEENTER: add 'line' to hoveringLayers
+        map.on('mouseenter', 'AW Rivers-line', (e) => {
+            hoveringLayers.add('line');
+            isHovering.rivers = true;
+            updateCursor();
+
+            const feature = e.features[0];
+            if (hoveredRiverId !== feature.id) {
+                if (hoveredRiverId !== null) {
+                    map.setFeatureState(
+                        { source: 'AW Rivers', sourceLayer: 'waterways', id: hoveredRiverId },
+                        { highlight: false }
+                    );
+                }
+
+                hoveredRiverId = feature.id;
+                map.setFeatureState(
+                    { source: 'AW Rivers', sourceLayer: 'waterways', id: hoveredRiverId },
+                    { highlight: true }
+                );
+            }
+        });
+
+        // MOUSELEAVE: only clear if not hovering fill
+        map.on('mouseleave', 'AW Rivers-line', () => {
+            hoveringLayers.delete('line');
+            isHovering.rivers = hoveringLayers.size > 0;
+            updateCursor();
+            updateHighlightState(hoveredRiverId);
+        });
+
+        // Same logic for FILL
+        map.on('mouseenter', 'AW Rivers-fill', (e) => {
+            hoveringLayers.add('fill');
+            isHovering.rivers = true;
+            updateCursor();
+
+            const feature = e.features[0];
+            if (hoveredRiverId !== feature.id) {
+                if (hoveredRiverId !== null) {
+                    map.setFeatureState(
+                        { source: 'AW Rivers', sourceLayer: 'waterways', id: hoveredRiverId },
+                        { highlight: false }
+                    );
+                }
+
+                hoveredRiverId = feature.id;
+                map.setFeatureState(
+                    { source: 'AW Rivers', sourceLayer: 'waterways', id: hoveredRiverId },
+                    { highlight: true }
+                );
+            }
+        });
+
+        map.on('mouseleave', 'AW Rivers-fill', () => {
+            hoveringLayers.delete('fill');
+            isHovering.rivers = hoveringLayers.size > 0;
+            updateCursor();
+            updateHighlightState(hoveredRiverId);
+        });
+
 
 
 
@@ -960,9 +1190,10 @@
                     ['==', ['get', 'spin'], 0],
                     ['==', ['get', 'bait'], 0]
                 ];
+                
             } else {
                 // General case
-                const validMethods = ['fly', 'spin', 'bait', 'closed'];
+                const validMethods = ['fly', 'spin', 'bait', 'permanently_closed'];
                 const selectedFilters = checked
                     .filter(method => validMethods.includes(method))
                     .map(method => ['==', ['get', method], 1]);
@@ -997,9 +1228,46 @@
         const inputs = layerList.getElementsByTagName('input');
 
         for (const input of inputs) {
-            input.onclick = (layer) => {
-                const styleId = `mapbox://styles/mapbox/${layer.target.id}`;
-                map.setStyle(styleId);
+            input.onclick = (basemaplayer) => {
+                const selectedId = basemaplayer.target.id;
+
+                if (selectedId === 'Topo') {
+                    // Set to your custom external style (example: OpenStreetMap raster)
+                    const TopoStyle = {
+                        version: 8,
+                        glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+                        sources: {
+                            'Topo-tiles': {
+                                type: 'raster',
+                                tiles: ['https://basemaps.linz.govt.nz/v1/tiles/topo-raster/WebMercatorQuad/{z}/{x}/{y}.webp?api=c01jz4p0kp7pzdm5cgxrakw47mt'],
+                                tileSize: 256,
+                                attribution: '© <a href="//www.linz.govt.nz/linz-copyright">LINZ CC BY 4.0</a> © <a href="//www.linz.govt.nz/data/linz-data/linz-basemaps/data-attribution">Topo Basemap contributors</a>'
+                            }
+                        },
+                        layers: [
+                            {
+                                id: 'Topo-tiles-layer',
+                                type: 'raster',
+                                source: 'Topo-tiles'
+
+
+                            }
+                        ]
+                    };
+                    map.setStyle(TopoStyle);
+
+                } else if (selectedId === 'Satellite') {
+                    // Set to your custom external style (example: OpenStreetMap raster)
+
+                    map.setStyle('https://basemaps.linz.govt.nz/v1/styles/aerial.json?api=d01hep5551e30kxb7w85hck49tp');
+
+
+                } else {
+                    // Default to Mapbox styles
+                    const styleId = `mapbox://styles/mapbox/${selectedId}`;
+                    map.setStyle(styleId);
+
+                }
             };
         }
 
@@ -1015,54 +1283,72 @@
                 button.textContent = 'Show Filters';
             }
         }
-        (function enableResizing() {
-            let startY = 0;
-            let startHeight = 0;
-            const card = document.getElementById('properties');
 
-            document.addEventListener('mousedown', startDrag);
-            document.addEventListener('touchstart', startDrag, { passive: false });
+        const input = document.getElementById('search');
+        const suggestions = document.getElementById('suggestions');
 
-            function startDrag(e) {
-                const target = e.target.closest('.map-overlay-drag-handle');
-                if (!target) return;
+        input.addEventListener('input', () => {
+            const query = input.value.trim().toLowerCase();
+            suggestions.innerHTML = '';
 
-                e.preventDefault();
-                startY = e.touches ? e.touches[0].clientY : e.clientY;
-
-                const overlay = target.closest('.map-overlay-inner');
-                startHeight = overlay.offsetHeight;
-
-                document.addEventListener('mousemove', onDrag);
-                document.addEventListener('touchmove', onDrag, { passive: false });
-
-                document.addEventListener('mouseup', stopDrag);
-                document.addEventListener('touchend', stopDrag);
+            if (!query) {
+                suggestions.style.display = 'none';
+                return;
             }
 
-            function onDrag(e) {
-                e.preventDefault();
-                const currentY = e.touches ? e.touches[0].clientY : e.clientY;
-                const deltaY = startY - currentY;
+            const matches = allFeatures.filter(f =>
+                f.properties.Water.toLowerCase().includes(query)
+            );
 
-                const overlay = document.querySelector('.map-overlay-inner');
-                let newHeight = startHeight + deltaY;
+            matches.forEach(f => {
+                const div = document.createElement('div');
+                div.className = 'suggestion';
+                div.innerHTML = `
+      <strong>${f.properties.Water}</strong><br>
+      <div class="section">${typeof f.properties.Section === 'string' ? f.properties.Section : ''}</div>
+      <div class="region">${f.properties.Region}</div>
+    `;
+                div.style.cursor = 'pointer';
+                div.onclick = () => selectFeatureFromSearch(f);
+                suggestions.appendChild(div);
+            });
 
-                // Clamp the height between 30% and 90% of viewport height
-                const minHeight = window.innerHeight * 0.3;
-                const maxHeight = window.innerHeight * 0.9;
-                newHeight = Math.max(minHeight, Math.min(maxHeight, newHeight));
+            suggestions.style.display = matches.length ? 'block' : 'none';
 
-                overlay.style.height = `${newHeight}px`;
-            }
 
-            function stopDrag() {
-                document.removeEventListener('mousemove', onDrag);
-                document.removeEventListener('touchmove', onDrag);
-                document.removeEventListener('mouseup', stopDrag);
-                document.removeEventListener('touchend', stopDrag);
-            }
-        })();
+        });
+        function selectFeatureFromSearch(f) {
+            const coords = f.geometry.coordinates;
+
+            clearSelection(); // Clear previous selection
+
+            map.setFilter('AW Rivers-line', null);
+            map.setFilter('AW Rivers-fill', null);
+
+            map.flyTo({ center: coords, zoom: 12 });
+            input.value = f.properties.Water;
+            suggestions.style.display = 'none';
+
+            showCard(f); // Show properties from the search index
+
+            // Use the feature id from search index to update vector tile feature state
+            map.setFeatureState(
+                {
+                    source: 'AW Rivers',       // your vector source name
+                    sourceLayer: 'waterways',  // your source layer name
+                    id: f.id                   // id from the search feature
+                },
+                { selected: true }           // any state you want to set
+            );
+
+            // Store selected id if you want to track it for later clearing
+            selectedRiver = { id: f.id };
+        }
+
+
+
+
+
 
 
 
